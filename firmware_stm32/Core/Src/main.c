@@ -47,21 +47,15 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-ADC_HandleTypeDef hadc1;
-
-I2C_HandleTypeDef hi2c1;
-
-RTC_HandleTypeDef hrtc;
-
-SD_HandleTypeDef hsd;
-
-TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim4;
-
-UART_HandleTypeDef huart1;
-UART_HandleTypeDef huart2;
-
-IWDG_HandleTypeDef hiwdg;
+extern ADC_HandleTypeDef hadc1;
+extern I2C_HandleTypeDef hi2c1;
+extern RTC_HandleTypeDef hrtc;
+extern SD_HandleTypeDef hsd;
+extern TIM_HandleTypeDef htim2;
+extern TIM_HandleTypeDef htim4;
+extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart2;
+extern IWDG_HandleTypeDef hiwdg;
 
 /* USER CODE BEGIN PV */
 
