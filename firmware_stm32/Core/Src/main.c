@@ -70,9 +70,7 @@ static uint32_t system_tick = 0;
 static uint32_t last_send_time = 0;
 static uint8_t device_initialized = 0;
 
-// Traffic data buffers
-static VehicleInfo_t lane1_buffer[MAX_VEHICLES_PER_INTERVAL];
-static VehicleInfo_t lane2_buffer[MAX_VEHICLES_PER_INTERVAL];
+// Traffic statistics (use the built-in statistics from vehicle detection)
 static uint16_t lane1_count = 0;
 static uint16_t lane2_count = 0;
 
@@ -81,9 +79,18 @@ static float temperature = 0.0f;
 static float humidity = 0.0f;
 static float battery_voltage = 0.0f;
 
-// Serial console buffer
-static char console_buffer[256];
+// Serial console
 static uint8_t console_rx_byte;
+
+// SIM800L configuration
+static SIM800L_Config_t sim800l_config = {
+    .apn = DEFAULT_APN,
+    .apn_user = DEFAULT_APN_USER,
+    .apn_pass = DEFAULT_APN_PASS,
+    .server_ip = DEFAULT_SERVER_IP,
+    .server_port = DEFAULT_SERVER_PORT,
+    .timeout_ms = SIM800L_RESPONSE_TIMEOUT
+};
 
 /* USER CODE END PV */
 
@@ -151,11 +158,10 @@ static void Process_10min_Tasks(void)
     // Send data to server
     Send_Data_To_Server();
 
-    // Reset buffers
+    // Reset statistics
+    VehicleDetection_ResetInterval();
     lane1_count = 0;
     lane2_count = 0;
-    memset(lane1_buffer, 0, sizeof(lane1_buffer));
-    memset(lane2_buffer, 0, sizeof(lane2_buffer));
 
     last_send_time = system_tick;
 }
@@ -205,24 +211,11 @@ static void Send_Data_To_Server(void)
     char json_buffer[2048];
     int json_len = 0;
 
-    // Count vehicles by class for each lane
-    uint16_t lane1_classes[6] = {0}; // X, A, B, C, D, E
-    uint16_t lane2_classes[6] = {0};
-    uint32_t lane1_avg_speed = 0;
-    uint32_t lane2_avg_speed = 0;
+    // Get interval statistics
+    const IntervalStats_t *stats = VehicleDetection_GetIntervalStats();
 
-    for (uint16_t i = 0; i < lane1_count; i++) {
-        lane1_classes[lane1_buffer[i].class]++;
-        lane1_avg_speed += lane1_buffer[i].speed;
-    }
-
-    for (uint16_t i = 0; i < lane2_count; i++) {
-        lane2_classes[lane2_buffer[i].class]++;
-        lane2_avg_speed += lane2_buffer[i].speed;
-    }
-
-    if (lane1_count > 0) lane1_avg_speed /= lane1_count;
-    if (lane2_count > 0) lane2_avg_speed /= lane2_count;
+    const LaneStats_t *lane1 = &stats->lane[0];
+    const LaneStats_t *lane2 = &stats->lane[1];
 
     // Build JSON payload
     json_len = snprintf(json_buffer, sizeof(json_buffer),
@@ -233,13 +226,15 @@ static void Send_Data_To_Server(void)
             "\"total\":%u,"
             "\"class_x\":%u,\"class_a\":%u,\"class_b\":%u,"
             "\"class_c\":%u,\"class_d\":%u,\"class_e\":%u,"
-            "\"avg_speed\":%lu"
+            "\"avg_speed\":%u,"
+            "\"occupancy\":%.2f"
         "},"
         "\"lane2\":{"
             "\"total\":%u,"
             "\"class_x\":%u,\"class_a\":%u,\"class_b\":%u,"
             "\"class_c\":%u,\"class_d\":%u,\"class_e\":%u,"
-            "\"avg_speed\":%lu"
+            "\"avg_speed\":%u,"
+            "\"occupancy\":%.2f"
         "},"
         "\"environment\":{"
             "\"temperature\":%.1f,"
@@ -253,14 +248,16 @@ static void Send_Data_To_Server(void)
         "}",
         DEFAULT_DEVICE_ID,
         system_tick / 1000,
-        lane1_count,
-        lane1_classes[0], lane1_classes[1], lane1_classes[2],
-        lane1_classes[3], lane1_classes[4], lane1_classes[5],
-        lane1_avg_speed,
-        lane2_count,
-        lane2_classes[0], lane2_classes[1], lane2_classes[2],
-        lane2_classes[3], lane2_classes[4], lane2_classes[5],
-        lane2_avg_speed,
+        lane1->total_vehicles,
+        lane1->class_X.count, lane1->class_A.count, lane1->class_B.count,
+        lane1->class_C.count, lane1->class_D.count, lane1->class_E.count,
+        lane1->class_A.avg_speed,
+        lane1->occupancy_rate,
+        lane2->total_vehicles,
+        lane2->class_X.count, lane2->class_A.count, lane2->class_B.count,
+        lane2->class_C.count, lane2->class_D.count, lane2->class_E.count,
+        lane2->class_A.avg_speed,
+        lane2->occupancy_rate,
         temperature, humidity, battery_voltage,
         system_tick / 1000
     );
@@ -268,7 +265,7 @@ static void Send_Data_To_Server(void)
     printf("\r\n[DATA] JSON Payload (%d bytes):\r\n%s\r\n", json_len, json_buffer);
 
     // Send via SIM800L
-    if (SIM800L_SendTCP(json_buffer, json_len) == HAL_OK) {
+    if (SIM800L_SendJSON(json_buffer) == HAL_OK) {
         printf("[SUCCESS] Data sent to server successfully!\r\n");
     } else {
         printf("[ERROR] Failed to send data to server!\r\n");
@@ -397,24 +394,47 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 /**
   * @brief  Vehicle detected callback
   */
-void VehicleDetection_Callback(uint8_t lane, VehicleInfo_t *vehicle)
+void VehicleDetection_Callback(const VehicleInfo_t *vehicle)
 {
-    const char *class_names[] = {"X", "A", "B", "C", "D", "E"};
-    const char *dir_names[] = {"FORWARD", "REVERSE"};
+    const char *class_names[] = {"X", "A", "B", "C", "D", "E", "?"};
+    const char *dir_names[] = {"UNKNOWN", "UNKNOWN", "UNKNOWN", "UNKNOWN", "UNKNOWN",
+                               "UNKNOWN", "UNKNOWN", "UNKNOWN", "UNKNOWN", "UNKNOWN",
+                               "UNKNOWN", "UNKNOWN", "FORWARD", "UNKNOWN", "UNKNOWN",
+                               "UNKNOWN", "UNKNOWN", "UNKNOWN", "UNKNOWN", "UNKNOWN",
+                               "UNKNOWN", "REVERSE"};
+
+    // Map class enum to index
+    uint8_t class_idx = 6; // Unknown
+    if (vehicle->class == 'X') class_idx = 0;
+    else if (vehicle->class == 'A') class_idx = 1;
+    else if (vehicle->class == 'B') class_idx = 2;
+    else if (vehicle->class == 'C') class_idx = 3;
+    else if (vehicle->class == 'D') class_idx = 4;
+    else if (vehicle->class == 'E') class_idx = 5;
 
     printf("[VEHICLE] Lane %u: Class %s, Speed %u km/h, Length %u cm, Dir %s\r\n",
-           lane,
-           class_names[vehicle->class],
+           vehicle->lane_id + 1,
+           class_names[class_idx],
            vehicle->speed,
            vehicle->length,
            dir_names[vehicle->direction]);
 
-    // Store in buffer
-    if (lane == 1 && lane1_count < MAX_VEHICLES_PER_INTERVAL) {
-        memcpy(&lane1_buffer[lane1_count++], vehicle, sizeof(VehicleInfo_t));
+    // Update counters
+    if (vehicle->lane_id == 0) {
+        lane1_count++;
+    } else if (vehicle->lane_id == 1) {
+        lane2_count++;
     }
-    else if (lane == 2 && lane2_count < MAX_VEHICLES_PER_INTERVAL) {
-        memcpy(&lane2_buffer[lane2_count++], vehicle, sizeof(VehicleInfo_t));
+
+    // Check for violations
+    if (vehicle->speed_violation) {
+        printf("[WARNING] Speed violation detected!\r\n");
+    }
+    if (vehicle->wrong_direction) {
+        printf("[WARNING] Wrong direction detected!\r\n");
+    }
+    if (vehicle->short_headway) {
+        printf("[WARNING] Short headway detected!\r\n");
     }
 }
 
@@ -476,15 +496,18 @@ int main(void)
   }
 
   printf("[INIT] Initializing SIM800L module...\r\n");
-  if (SIM800L_Init(&huart2) != HAL_OK) {
+  if (SIM800L_Init(&huart2, &sim800l_config) != HAL_OK) {
       printf("[ERROR] SIM800L initialization failed!\r\n");
   } else {
       printf("[OK] SIM800L module initialized\r\n");
   }
 
   printf("[INIT] Initializing vehicle detection...\r\n");
-  VehicleDetection_Init(VehicleDetection_Callback);
-  printf("[OK] Vehicle detection initialized\r\n");
+  if (VehicleDetection_Init() != HAL_OK) {
+      printf("[ERROR] Vehicle detection initialization failed!\r\n");
+  } else {
+      printf("[OK] Vehicle detection initialized\r\n");
+  }
 
   // Start timers
   HAL_TIM_Base_Start_IT(&htim4);  // 1ms tick timer

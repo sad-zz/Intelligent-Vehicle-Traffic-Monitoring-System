@@ -101,6 +101,7 @@ extern "C" {
 #define SD_CARD_ENABLED         1
 #define FLASH_CONFIG_ADDRESS    0x080E0000  // Last sector for config
 #define INTERVAL_DATA_SIZE      512         // Bytes per interval record
+#define MAX_VEHICLES_PER_INTERVAL 500       // Maximum vehicles to store per 10-min interval
 
 /* ==================== GPIO Pin Definitions ==================== */
 
