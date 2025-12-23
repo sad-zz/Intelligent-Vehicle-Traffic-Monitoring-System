@@ -7,6 +7,7 @@
 #include "sim800l_driver.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /* Private variables */
 static UART_HandleTypeDef *sim800l_uart = NULL;
