@@ -133,7 +133,6 @@ static void ProcessLane(uint8_t lane_id)
 
                 // Calculate time intervals
                 uint32_t occupancy1 = lane->T2 - lane->T1;  // Time on first loop
-                uint32_t gap_time = lane->T3 - lane->T2;    // Time between loops
                 uint32_t occupancy2 = lane->T4 - lane->T3;  // Time on second loop
 
                 // Calculate average time between loops
@@ -179,6 +178,11 @@ static void ProcessLane(uint8_t lane_id)
                 // Reset lane
                 ResetLane(lane_id);
             }
+            break;
+
+        default:
+            // Handle unexpected states
+            ResetLane(lane_id);
             break;
     }
 }
@@ -284,8 +288,7 @@ void VehicleDetection_ResetInterval(void)
 {
     interval_stats.interval_end = HAL_GetTick();
 
-    // Clear statistics but keep interval timestamps
-    uint32_t start = interval_stats.interval_start;
+    // Clear statistics but keep interval timestamp
     uint32_t end = interval_stats.interval_end;
 
     memset(&interval_stats, 0, sizeof(interval_stats));
