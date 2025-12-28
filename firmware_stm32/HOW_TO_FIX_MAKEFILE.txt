@@ -1,0 +1,48 @@
+##############################################################################
+# INSTRUCTION: Add vehicle_detection.c to your Makefile
+##############################################################################
+
+STEP 1: Open Makefile in your project root directory
+  Location: C:\Users\research\Downloads\Makefile
+
+STEP 2: Find the C_SOURCES section (around line 50-80)
+  It should look like this:
+
+  C_SOURCES =  \
+  Core/Src/main.c \
+  Core/Src/gpio.c \
+  ...
+
+STEP 3: Add this line AFTER the BSP drivers and BEFORE the HAL drivers:
+
+  Middleware/vehicle_detection.c \
+
+EXAMPLE:
+--------
+BEFORE (what you currently have):
+
+  Drivers/BSP/sensor_driver.c \
+  Drivers/BSP/sim800l_driver.c \
+  Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
+
+AFTER (what it should be):
+
+  Drivers/BSP/sensor_driver.c \
+  Drivers/BSP/sim800l_driver.c \
+  Middleware/vehicle_detection.c \
+  Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
+
+IMPORTANT NOTES:
+- Make sure there is a backslash (\) at the end of EVERY line except the last one
+- The path is relative to the Makefile location
+- Use forward slashes (/) not backslashes (\) in the path
+
+STEP 4: Save the Makefile
+
+STEP 5: In STM32CubeIDE:
+  Project → Clean...
+  Project → Build All
+
+The build should now succeed!
+
+##############################################################################

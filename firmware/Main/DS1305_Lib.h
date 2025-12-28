@@ -1,0 +1,90 @@
+
+void rtc_read()
+{
+     shorttostr(current_time.year,tmp3);
+     datetimesec[2]=tmp3[2];
+     datetimesec[3]=tmp3[3];
+     shorttostr(current_time.month,tmp3);
+     datetimesec[5]=tmp3[2];
+     datetimesec[6]=tmp3[3];
+     shorttostr(current_time.day,tmp3);
+     datetimesec[8]=tmp3[2];
+     datetimesec[9]=tmp3[3];
+     shorttostr(current_time.hour,tmp3);
+     datetimesec[11]=tmp3[2];
+     datetimesec[12]=tmp3[3];
+     shorttostr(current_time.minute,tmp3);
+     datetimesec[14]=tmp3[2];
+     datetimesec[15]=tmp3[3];
+     shorttostr(current_time.second,tmp3);
+     datetimesec[17]=tmp3[2];
+     datetimesec[18]=tmp3[3];
+     datetimesec[20]=(char)((milisec/100)+48);
+     for(rtc_read_cnt=0;rtc_read_cnt<strlen(datetimesec);rtc_read_cnt++) if(datetimesec[rtc_read_cnt]==' ') datetimesec[rtc_read_cnt]='0';
+}
+void rtc_init()
+{
+     current_time.second=0;
+     current_time.minute=0;
+     current_time.hour=0;
+     current_time.day=1;
+     current_time.month=1;
+     current_time.year=0;
+     //T1CON=0x0030;
+     //PR1=28797;
+     //T1IF_bit=0;
+     //T1IE_bit=1;
+     //T1CONbits.TON=1;
+
+}
+void rtc_write(char input)
+{
+     //while(spi_busy);
+     //spi_rtc_init();
+     //if(!spi_busy)
+     {
+         //spi_busy=1;
+         rtc=1;
+         if(input==1)
+         {
+             current_time.second=(uart1_data[15]-48)+(uart1_data[14]-48)*10;
+             current_time.minute=(uart1_data[13]-48)+(uart1_data[12]-48)*10;
+             current_time.hour=(uart1_data[11]-48)+(uart1_data[10]-48)*10;
+             current_time.day=(uart1_data[9]-48)+(uart1_data[8]-48)*10;
+             current_time.month=(uart1_data[7]-48)+(uart1_data[6]-48)*10;
+             current_time.year=(uart1_data[5]-48)+(uart1_data[4]-48)*10;
+         }
+         else
+         {
+             current_time.second=(uart2_data[15]-48)+(uart2_data[14]-48)*10;
+             current_time.minute=(uart2_data[13]-48)+(uart2_data[12]-48)*10;
+             current_time.hour=(uart2_data[11]-48)+(uart2_data[10]-48)*10;
+             current_time.day=(uart2_data[9]-48)+(uart2_data[8]-48)*10;
+             current_time.month=(uart2_data[7]-48)+(uart2_data[6]-48)*10;
+             current_time.year=(uart2_data[5]-48)+(uart2_data[4]-48)*10;
+         }
+         /*
+         delay_us(2);
+         SPI1_write(0x80);
+         delay_us(2);
+         SPI1_Write(Dec2BCD(current_time.second));
+         delay_us(2);
+         SPI1_Write(Dec2BCD(current_time.minute));
+         delay_us(2);
+         SPI1_Write(Dec2BCD(current_time.hour));
+         delay_us(2);
+         SPI1_Write(1);
+         delay_us(2);
+         SPI1_Write(Dec2BCD(current_time.day));
+         delay_us(2);
+         SPI1_Write(Dec2BCD(current_time.month));
+         delay_us(2);
+         SPI1_Write(Dec2BCD(current_time.year));
+         delay_us(2);
+         rtc=0;
+         spi_busy=0;
+         delay_us(2);
+         */
+          rtc=0;
+     }
+}
