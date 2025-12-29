@@ -258,12 +258,17 @@ static void Send_Data_To_Server(void)
 
     printf("\r\n[DATA] JSON Payload (%d bytes):\r\n%s\r\n", json_len, json_buffer);
 
-    // Send via SIM800L
-    if (SIM800L_SendJSON(json_buffer) == HAL_OK) {
-        printf("[SUCCESS] Data sent to server successfully!\r\n");
-    } else {
-        printf("[ERROR] Failed to send data to server!\r\n");
-    }
+    // Temporarily skip SIM800L sending for testing
+    printf("[INFO] SIM800L sending disabled (testing mode)\r\n");
+    printf("[INFO] Data would be sent to %s:%d\r\n",
+           sim800l_config.server_ip, sim800l_config.server_port);
+
+    // Send via SIM800L (disabled for testing)
+    // if (SIM800L_SendJSON(json_buffer) == HAL_OK) {
+    //     printf("[SUCCESS] Data sent to server successfully!\r\n");
+    // } else {
+    //     printf("[ERROR] Failed to send data to server!\r\n");
+    // }
 }
 
 /**
@@ -489,12 +494,14 @@ int main(void)
       printf("[OK] Sensor driver initialized\r\n");
   }
 
-  printf("[INIT] Initializing SIM800L module...\r\n");
-  if (SIM800L_Init(&huart2, &sim800l_config) != HAL_OK) {
-      printf("[ERROR] SIM800L initialization failed!\r\n");
-  } else {
-      printf("[OK] SIM800L module initialized\r\n");
-  }
+  // Temporarily skip SIM800L for sensor testing
+  printf("[INIT] Skipping SIM800L module (testing mode)...\r\n");
+  printf("[INFO] SIM800L will be enabled later\r\n");
+  // if (SIM800L_Init(&huart2, &sim800l_config) != HAL_OK) {
+  //     printf("[ERROR] SIM800L initialization failed!\r\n");
+  // } else {
+  //     printf("[OK] SIM800L module initialized\r\n");
+  // }
 
   printf("[INIT] Initializing vehicle detection...\r\n");
   if (VehicleDetection_Init() != HAL_OK) {
