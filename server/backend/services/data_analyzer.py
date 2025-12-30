@@ -3,7 +3,7 @@ Data Analysis Service
 Provides statistical analysis of traffic data
 """
 from datetime import datetime, timedelta
-from sqlalchemy import func
+from sqlalchemy import func, extract
 from database.models import Device, TrafficData
 
 
@@ -127,8 +127,6 @@ class DataAnalyzer:
         end_time = start_time + timedelta(days=1)
 
         # Use SQL GROUP BY for better performance
-        from sqlalchemy import extract
-        
         hourly_aggregates = self.db.session.query(
             extract('hour', TrafficData.timestamp).label('hour'),
             func.sum(TrafficData.lane1_total + TrafficData.lane2_total).label('total_vehicles'),
@@ -177,7 +175,7 @@ class DataAnalyzer:
             TrafficData.timestamp <= end_time
         ).first()
 
-        if not aggregates:
+        if not aggregates or aggregates.class_x is None:
             return {}
 
         # Sum all classes

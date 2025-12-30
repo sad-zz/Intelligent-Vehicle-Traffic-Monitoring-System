@@ -193,7 +193,7 @@ class Alert(db.Model):
     
     # Composite indexes for common queries
     __table_args__ = (
-        Index('idx_device_alert_resolved', 'device_id', 'alert_type', 'resolved'),
+        Index('idx_alert_type_resolved', 'alert_type', 'resolved'),
         Index('idx_resolved_created', 'resolved', 'created_at'),
     )
 
