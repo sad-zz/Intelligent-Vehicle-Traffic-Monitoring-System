@@ -26,7 +26,7 @@ class Device(db.Model):
 
     # Status
     last_seen = db.Column(db.DateTime, index=True)
-    status = db.Column(db.String(20), default='offline')  # online, offline, error
+    status = db.Column(db.String(20), default='offline', index=True)  # online, offline, error
     battery_voltage = db.Column(db.Float)
     signal_quality = db.Column(db.Integer)
 
@@ -175,14 +175,14 @@ class Alert(db.Model):
     device_id = db.Column(db.Integer, db.ForeignKey('devices.id'), index=True)
 
     # Alert info
-    alert_type = db.Column(db.String(50), nullable=False)  # offline, low_traffic, sensor_error, etc.
+    alert_type = db.Column(db.String(50), nullable=False, index=True)  # offline, low_traffic, sensor_error, etc.
     severity = db.Column(db.String(20), default='warning')  # info, warning, error, critical
     message = db.Column(db.Text)
     details = db.Column(db.JSON)
 
     # Status
     acknowledged = db.Column(db.Boolean, default=False)
-    resolved = db.Column(db.Boolean, default=False)
+    resolved = db.Column(db.Boolean, default=False, index=True)
     resolved_at = db.Column(db.DateTime)
 
     # Relationships
@@ -190,6 +190,12 @@ class Alert(db.Model):
 
     # Timestamps
     created_at = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+    
+    # Composite indexes for common queries
+    __table_args__ = (
+        Index('idx_device_alert_resolved', 'device_id', 'alert_type', 'resolved'),
+        Index('idx_resolved_created', 'resolved', 'created_at'),
+    )
 
     def __repr__(self):
         return f'<Alert {self.alert_type} for Device {self.device_id}>'
