@@ -3,7 +3,7 @@ Data Analysis Service
 Provides statistical analysis of traffic data
 """
 from datetime import datetime, timedelta
-from sqlalchemy import func
+from sqlalchemy import func, extract
 from database.models import Device, TrafficData
 
 
@@ -22,16 +22,41 @@ class DataAnalyzer:
         if end_time is None:
             end_time = datetime.utcnow()
 
-        # Query traffic data
-        query = self.db.session.query(TrafficData).filter(
+        # Use SQL aggregations for better performance
+        aggregates = self.db.session.query(
+            func.count(TrafficData.id).label('data_points'),
+            func.sum(TrafficData.lane1_total + TrafficData.lane2_total).label('total_vehicles'),
+            func.avg(TrafficData.temperature).label('avg_temperature'),
+            func.avg(TrafficData.humidity).label('avg_humidity'),
+            # Lane 1 aggregations
+            func.sum(TrafficData.lane1_total).label('lane1_total'),
+            func.sum(TrafficData.lane1_class_x).label('lane1_class_x'),
+            func.sum(TrafficData.lane1_class_a).label('lane1_class_a'),
+            func.sum(TrafficData.lane1_class_b).label('lane1_class_b'),
+            func.sum(TrafficData.lane1_class_c).label('lane1_class_c'),
+            func.sum(TrafficData.lane1_class_d).label('lane1_class_d'),
+            func.sum(TrafficData.lane1_class_e).label('lane1_class_e'),
+            func.avg(TrafficData.lane1_avg_speed).label('lane1_avg_speed'),
+            func.avg(TrafficData.lane1_occupancy).label('lane1_avg_occupancy'),
+            func.sum(TrafficData.lane1_violations).label('lane1_violations'),
+            # Lane 2 aggregations
+            func.sum(TrafficData.lane2_total).label('lane2_total'),
+            func.sum(TrafficData.lane2_class_x).label('lane2_class_x'),
+            func.sum(TrafficData.lane2_class_a).label('lane2_class_a'),
+            func.sum(TrafficData.lane2_class_b).label('lane2_class_b'),
+            func.sum(TrafficData.lane2_class_c).label('lane2_class_c'),
+            func.sum(TrafficData.lane2_class_d).label('lane2_class_d'),
+            func.sum(TrafficData.lane2_class_e).label('lane2_class_e'),
+            func.avg(TrafficData.lane2_avg_speed).label('lane2_avg_speed'),
+            func.avg(TrafficData.lane2_occupancy).label('lane2_avg_occupancy'),
+            func.sum(TrafficData.lane2_violations).label('lane2_violations')
+        ).filter(
             TrafficData.device_id == device_id,
             TrafficData.timestamp >= start_time,
             TrafficData.timestamp <= end_time
-        )
+        ).first()
 
-        traffic_data = query.all()
-
-        if not traffic_data:
+        if not aggregates or aggregates.data_points == 0:
             return {
                 'device_id': device_id,
                 'start_time': start_time.isoformat(),
@@ -40,59 +65,48 @@ class DataAnalyzer:
                 'lanes': []
             }
 
-        # Calculate statistics
-        total_vehicles = sum(d.lane1_total + d.lane2_total for d in traffic_data)
+        # Build lane statistics from aggregated data
+        lane1_stats = {
+            'lane_id': 1,
+            'total_vehicles': aggregates.lane1_total or 0,
+            'vehicle_classes': {
+                'X': aggregates.lane1_class_x or 0,
+                'A': aggregates.lane1_class_a or 0,
+                'B': aggregates.lane1_class_b or 0,
+                'C': aggregates.lane1_class_c or 0,
+                'D': aggregates.lane1_class_d or 0,
+                'E': aggregates.lane1_class_e or 0
+            },
+            'avg_speed': round(aggregates.lane1_avg_speed or 0, 2),
+            'avg_occupancy': round(aggregates.lane1_avg_occupancy or 0, 2),
+            'total_violations': aggregates.lane1_violations or 0
+        }
 
-        lane1_stats = self._calculate_lane_stats(traffic_data, lane=1)
-        lane2_stats = self._calculate_lane_stats(traffic_data, lane=2)
+        lane2_stats = {
+            'lane_id': 2,
+            'total_vehicles': aggregates.lane2_total or 0,
+            'vehicle_classes': {
+                'X': aggregates.lane2_class_x or 0,
+                'A': aggregates.lane2_class_a or 0,
+                'B': aggregates.lane2_class_b or 0,
+                'C': aggregates.lane2_class_c or 0,
+                'D': aggregates.lane2_class_d or 0,
+                'E': aggregates.lane2_class_e or 0
+            },
+            'avg_speed': round(aggregates.lane2_avg_speed or 0, 2),
+            'avg_occupancy': round(aggregates.lane2_avg_occupancy or 0, 2),
+            'total_violations': aggregates.lane2_violations or 0
+        }
 
         return {
             'device_id': device_id,
             'start_time': start_time.isoformat(),
             'end_time': end_time.isoformat(),
-            'total_vehicles': total_vehicles,
-            'data_points': len(traffic_data),
+            'total_vehicles': aggregates.total_vehicles or 0,
+            'data_points': aggregates.data_points,
             'lanes': [lane1_stats, lane2_stats],
-            'avg_temperature': sum(d.temperature or 0 for d in traffic_data) / len(traffic_data),
-            'avg_humidity': sum(d.humidity or 0 for d in traffic_data) / len(traffic_data)
-        }
-
-    def _calculate_lane_stats(self, traffic_data, lane):
-        """Calculate statistics for a specific lane"""
-        if lane == 1:
-            total = sum(d.lane1_total for d in traffic_data)
-            classes = {
-                'X': sum(d.lane1_class_x for d in traffic_data),
-                'A': sum(d.lane1_class_a for d in traffic_data),
-                'B': sum(d.lane1_class_b for d in traffic_data),
-                'C': sum(d.lane1_class_c for d in traffic_data),
-                'D': sum(d.lane1_class_d for d in traffic_data),
-                'E': sum(d.lane1_class_e for d in traffic_data)
-            }
-            avg_speed = sum(d.lane1_avg_speed or 0 for d in traffic_data) / len(traffic_data)
-            avg_occupancy = sum(d.lane1_occupancy or 0 for d in traffic_data) / len(traffic_data)
-            violations = sum(d.lane1_violations for d in traffic_data)
-        else:
-            total = sum(d.lane2_total for d in traffic_data)
-            classes = {
-                'X': sum(d.lane2_class_x for d in traffic_data),
-                'A': sum(d.lane2_class_a for d in traffic_data),
-                'B': sum(d.lane2_class_b for d in traffic_data),
-                'C': sum(d.lane2_class_c for d in traffic_data),
-                'D': sum(d.lane2_class_d for d in traffic_data),
-                'E': sum(d.lane2_class_e for d in traffic_data)
-            }
-            avg_speed = sum(d.lane2_avg_speed or 0 for d in traffic_data) / len(traffic_data)
-            avg_occupancy = sum(d.lane2_occupancy or 0 for d in traffic_data) / len(traffic_data)
-            violations = sum(d.lane2_violations for d in traffic_data)
-
-        return {
-            'lane_id': lane,
-            'total_vehicles': total,
-            'vehicle_classes': classes,
-            'avg_speed': round(avg_speed, 2),
-            'avg_occupancy': round(avg_occupancy, 2),
-            'total_violations': violations
+            'avg_temperature': round(aggregates.avg_temperature or 0, 2),
+            'avg_humidity': round(aggregates.avg_humidity or 0, 2)
         }
 
     def get_total_vehicles_today(self):
@@ -112,31 +126,32 @@ class DataAnalyzer:
         start_time = datetime.combine(date, datetime.min.time())
         end_time = start_time + timedelta(days=1)
 
-        traffic_data = self.db.session.query(TrafficData).filter(
+        # Use SQL GROUP BY for better performance
+        hourly_aggregates = self.db.session.query(
+            extract('hour', TrafficData.timestamp).label('hour'),
+            func.sum(TrafficData.lane1_total + TrafficData.lane2_total).label('total_vehicles'),
+            func.sum(TrafficData.lane1_total).label('lane1_total'),
+            func.sum(TrafficData.lane2_total).label('lane2_total'),
+            func.count(TrafficData.id).label('data_points')
+        ).filter(
             TrafficData.device_id == device_id,
             TrafficData.timestamp >= start_time,
             TrafficData.timestamp < end_time
-        ).order_by(TrafficData.timestamp).all()
+        ).group_by(extract('hour', TrafficData.timestamp)).all()
 
-        # Group by hour
-        hourly_data = {}
-        for data in traffic_data:
-            hour = data.timestamp.hour
-            if hour not in hourly_data:
-                hourly_data[hour] = {
-                    'hour': hour,
-                    'total_vehicles': 0,
-                    'lane1_total': 0,
-                    'lane2_total': 0,
-                    'data_points': 0
-                }
+        # Convert to dictionary format
+        hourly_data = [
+            {
+                'hour': int(row.hour),
+                'total_vehicles': row.total_vehicles or 0,
+                'lane1_total': row.lane1_total or 0,
+                'lane2_total': row.lane2_total or 0,
+                'data_points': row.data_points
+            }
+            for row in hourly_aggregates
+        ]
 
-            hourly_data[hour]['total_vehicles'] += data.lane1_total + data.lane2_total
-            hourly_data[hour]['lane1_total'] += data.lane1_total
-            hourly_data[hour]['lane2_total'] += data.lane2_total
-            hourly_data[hour]['data_points'] += 1
-
-        return sorted(hourly_data.values(), key=lambda x: x['hour'])
+        return sorted(hourly_data, key=lambda x: x['hour'])
 
     def get_class_distribution(self, device_id, start_time=None, end_time=None):
         """Get vehicle class distribution"""
@@ -146,25 +161,31 @@ class DataAnalyzer:
         if end_time is None:
             end_time = datetime.utcnow()
 
-        query = self.db.session.query(TrafficData).filter(
+        # Use SQL aggregations for better performance
+        aggregates = self.db.session.query(
+            func.sum(TrafficData.lane1_class_x + TrafficData.lane2_class_x).label('class_x'),
+            func.sum(TrafficData.lane1_class_a + TrafficData.lane2_class_a).label('class_a'),
+            func.sum(TrafficData.lane1_class_b + TrafficData.lane2_class_b).label('class_b'),
+            func.sum(TrafficData.lane1_class_c + TrafficData.lane2_class_c).label('class_c'),
+            func.sum(TrafficData.lane1_class_d + TrafficData.lane2_class_d).label('class_d'),
+            func.sum(TrafficData.lane1_class_e + TrafficData.lane2_class_e).label('class_e')
+        ).filter(
             TrafficData.device_id == device_id,
             TrafficData.timestamp >= start_time,
             TrafficData.timestamp <= end_time
-        )
+        ).first()
 
-        traffic_data = query.all()
-
-        if not traffic_data:
+        if not aggregates or aggregates.class_x is None:
             return {}
 
         # Sum all classes
         distribution = {
-            'X': sum(d.lane1_class_x + d.lane2_class_x for d in traffic_data),
-            'A': sum(d.lane1_class_a + d.lane2_class_a for d in traffic_data),
-            'B': sum(d.lane1_class_b + d.lane2_class_b for d in traffic_data),
-            'C': sum(d.lane1_class_c + d.lane2_class_c for d in traffic_data),
-            'D': sum(d.lane1_class_d + d.lane2_class_d for d in traffic_data),
-            'E': sum(d.lane1_class_e + d.lane2_class_e for d in traffic_data)
+            'X': aggregates.class_x or 0,
+            'A': aggregates.class_a or 0,
+            'B': aggregates.class_b or 0,
+            'C': aggregates.class_c or 0,
+            'D': aggregates.class_d or 0,
+            'E': aggregates.class_e or 0
         }
 
         total = sum(distribution.values())

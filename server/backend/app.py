@@ -189,7 +189,7 @@ class TCPServer:
         total_speed = 0
         total_count = 0
 
-        for class_name, class_data in vehicles_data.items():
+        for class_data in vehicles_data.values():
             count = class_data.get('count', 0)
             avg_speed = class_data.get('avg_speed', 0)
             total_speed += avg_speed * count
@@ -199,10 +199,7 @@ class TCPServer:
 
     def _get_total_violations(self, vehicles_data):
         """Get total violations from vehicle data"""
-        total = 0
-        for class_name, class_data in vehicles_data.items():
-            total += class_data.get('violations', 0)
-        return total
+        return sum(class_data.get('violations', 0) for class_data in vehicles_data.values())
 
     def stop(self):
         """Stop TCP server"""
@@ -236,6 +233,10 @@ def get_device_traffic(device_id):
     start_date = request.args.get('start_date')
     end_date = request.args.get('end_date')
     limit = request.args.get('limit', 100, type=int)
+    
+    # Enforce maximum limit to prevent performance issues
+    MAX_LIMIT = 1000
+    limit = min(limit, MAX_LIMIT)
 
     query = TrafficData.query.filter_by(device_id=device.id)
 

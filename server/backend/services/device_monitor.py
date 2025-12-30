@@ -3,6 +3,7 @@ Device Health Monitoring Service
 Monitors devices and generates alerts for issues
 """
 from datetime import datetime, timedelta
+from sqlalchemy import func
 from apscheduler.schedulers.background import BackgroundScheduler
 from database.models import Device, TrafficData, Alert
 
@@ -84,17 +85,20 @@ class DeviceMonitor:
         # Get traffic data for last hour
         one_hour_ago = datetime.utcnow() - timedelta(hours=1)
 
-        recent_data = self.db.session.query(TrafficData).filter(
+        # Use SQL aggregation for better performance
+        device_stats = self.db.session.query(
+            func.count(TrafficData.id).label('count'),
+            func.sum(TrafficData.lane1_total + TrafficData.lane2_total).label('total_vehicles')
+        ).filter(
             TrafficData.device_id == device.id,
             TrafficData.timestamp >= one_hour_ago
-        ).all()
+        ).first()
 
-        if not recent_data:
+        if not device_stats or device_stats.count == 0:
             return
 
         # Calculate average vehicles per interval
-        total_vehicles = sum(d.lane1_total + d.lane2_total for d in recent_data)
-        avg_per_interval = total_vehicles / len(recent_data) if recent_data else 0
+        avg_per_interval = device_stats.total_vehicles / device_stats.count if device_stats.count > 0 else 0
 
         # Get average from all devices for comparison
         all_devices_avg = self._get_system_average_traffic(one_hour_ago)
@@ -143,16 +147,18 @@ class DeviceMonitor:
 
     def _get_system_average_traffic(self, since):
         """Get average traffic across all devices"""
-        # Get all traffic data since timestamp
-        all_data = self.db.session.query(TrafficData).filter(
+        # Use SQL aggregation for better performance
+        system_stats = self.db.session.query(
+            func.count(TrafficData.id).label('count'),
+            func.sum(TrafficData.lane1_total + TrafficData.lane2_total).label('total_vehicles')
+        ).filter(
             TrafficData.timestamp >= since
-        ).all()
+        ).first()
 
-        if not all_data:
+        if not system_stats or system_stats.count == 0:
             return 0
 
-        total_vehicles = sum(d.lane1_total + d.lane2_total for d in all_data)
-        return total_vehicles / len(all_data)
+        return system_stats.total_vehicles / system_stats.count
 
     def _create_alert(self, device, alert_type, severity, message, details):
         """Create alert if one doesn't already exist"""
