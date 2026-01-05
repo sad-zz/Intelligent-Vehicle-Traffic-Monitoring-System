@@ -56,7 +56,7 @@ extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim4;
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
-IWDG_HandleTypeDef hiwdg;  // Define here instead of extern
+extern IWDG_HandleTypeDef hiwdg;  // Defined in iwdg.c
 
 /* USER CODE BEGIN PV */
 
