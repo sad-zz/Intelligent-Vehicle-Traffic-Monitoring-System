@@ -470,7 +470,6 @@ int main(void)
   MX_TIM4_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
-  MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
 
   // Print startup message
@@ -502,6 +501,9 @@ int main(void)
   } else {
       printf("[OK] Vehicle detection initialized\r\n");
   }
+
+  // Initialize watchdog after time-consuming initialization
+  MX_IWDG_Init();
 
   // Start timers
   HAL_TIM_Base_Start_IT(&htim4);  // 1ms tick timer
