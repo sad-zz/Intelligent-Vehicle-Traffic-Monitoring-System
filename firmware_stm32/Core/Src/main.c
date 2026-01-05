@@ -475,7 +475,7 @@ int main(void)
   MX_TIM4_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
-  MX_IWDG_Init();
+  // MX_IWDG_Init();  // Disabled for testing - was causing reset loop
   /* USER CODE BEGIN 2 */
 
   // Print startup message
@@ -534,8 +534,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-      // Refresh watchdog
-      HAL_IWDG_Refresh(&hiwdg);
+      // Refresh watchdog (disabled for testing)
+      // HAL_IWDG_Refresh(&hiwdg);
 
       // Main loop can be used for non-time-critical tasks
       // Most processing happens in interrupt callbacks
