@@ -1,0 +1,105 @@
+{
+  "_comment": "تنظیمات پیش‌پیکربندی‌شده Rocket.Chat برای محیط آموزشی (100 کاربر)",
+  "settings": [
+    {
+      "id": "Accounts_RegistrationForm",
+      "value": "Disabled",
+      "_comment": "غیرفعال‌سازی ثبت‌نام عمومی — فقط ادمین کاربر اضافه می‌کند"
+    },
+    {
+      "id": "Accounts_AllowPasswordChangeByUser",
+      "value": true
+    },
+    {
+      "id": "Accounts_RequirePasswordConfirmation",
+      "value": true
+    },
+    {
+      "id": "Accounts_TwoFactorAuthentication_Enabled",
+      "value": false,
+      "_comment": "2FA را برای محیط آموزشی خاموش نگه دارید"
+    },
+    {
+      "id": "FileUpload_MaxFileSize",
+      "value": 52428800,
+      "_comment": "50 مگابایت حداکثر اندازه فایل"
+    },
+    {
+      "id": "FileUpload_MediaTypeWhiteList",
+      "value": "image/*, video/mp4, audio/mpeg, audio/ogg, application/pdf, application/zip",
+      "_comment": "فرمت‌های مجاز برای آپلود"
+    },
+    {
+      "id": "Message_MaxAllowedSize",
+      "value": 5000
+    },
+    {
+      "id": "Message_AllowEditing",
+      "value": true
+    },
+    {
+      "id": "Message_AllowEditing_BlockEditInMinutes",
+      "value": 60
+    },
+    {
+      "id": "Message_AllowDeleting",
+      "value": false,
+      "_comment": "جلوگیری از حذف پیام توسط دانش‌آموزان"
+    },
+    {
+      "id": "Jitsi_Enabled",
+      "value": true
+    },
+    {
+      "id": "Jitsi_Domain",
+      "value": "meet.jit.si"
+    },
+    {
+      "id": "Jitsi_Enable_Channels",
+      "value": true
+    },
+    {
+      "id": "Push_enable",
+      "value": false,
+      "_comment": "برای فعال‌سازی، به FCM/APNs نیاز است"
+    },
+    {
+      "id": "Language",
+      "value": "fa",
+      "_comment": "زبان پیش‌فرض: فارسی"
+    },
+    {
+      "id": "Site_Name",
+      "value": "پلتفرم آموزشی",
+      "_comment": "نام سایت را تغییر دهید"
+    },
+    {
+      "id": "Allow_Marketing_Emails",
+      "value": false
+    },
+    {
+      "id": "Statistics_reporting",
+      "value": false,
+      "_comment": "غیرفعال‌سازی ارسال آمار به Rocket.Chat"
+    },
+    {
+      "id": "API_Enable_Rate_Limiter",
+      "value": true
+    },
+    {
+      "id": "API_UserLimitedRequests",
+      "value": 600,
+      "_comment": "۶۰۰ درخواست در دقیقه برای هر کاربر"
+    },
+    {
+      "id": "Livechat_enabled",
+      "value": false,
+      "_comment": "Live Chat برای محیط آموزشی لازم نیست"
+    },
+    {
+      "id": "RetentionPolicy_Enabled",
+      "value": false,
+      "_comment": "پیام‌ها حذف خودکار نمی‌شوند"
+    }
+  ]
+}
