@@ -581,7 +581,26 @@ def get_s3_client():
         region_name="us-east-1"
     )
 
+# نوع MIME مجاز به همراه حداکثر حجم
+ALLOWED_MIME_TYPES = {
+    "image/jpeg":      ("image",    10),
+    "image/png":       ("image",    10),
+    "image/gif":       ("image",    10),
+    "image/webp":      ("image",    10),
+    "audio/mpeg":      ("audio",    50),
+    "audio/ogg":       ("audio",    50),
+    "audio/wav":       ("audio",    50),
+    "audio/mp4":       ("audio",    50),
+    "video/mp4":       ("video",   200),
+    "application/pdf": ("document", 50),
+    "text/plain":      ("document",  5),
+}
+
 def detect_file_type(content_type: str) -> str:
+    """
+    تشخیص نوع کلی فایل بر اساس MIME type اعلام‌شده.
+    توجه: بررسی نهایی بر اساس محتوای واقعی فایل انجام می‌شود.
+    """
     if content_type.startswith("image/"):
         return "image"
     elif content_type.startswith("audio/"):
@@ -597,8 +616,13 @@ async def upload_file(
     current_user=Depends(get_current_user),
     db=Depends(get_db)
 ):
-    file_type = detect_file_type(file.content_type or "")
-    max_size = MAX_FILE_SIZES.get(file_type, 10 * 1024 * 1024)
+    # اعتبارسنجی MIME type اعلام‌شده توسط کلاینت
+    declared_mime = (file.content_type or "").split(";")[0].strip().lower()
+    if declared_mime not in ALLOWED_MIME_TYPES:
+        raise HTTPException(415, f"نوع فایل '{declared_mime}' مجاز نیست")
+
+    file_type, max_mb = ALLOWED_MIME_TYPES[declared_mime]
+    max_size = max_mb * 1024 * 1024
 
     # بررسی حجم فایل با streaming (بدون بارگذاری کل فایل در RAM)
     total_size = 0
