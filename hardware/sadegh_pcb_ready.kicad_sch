@@ -6277,7 +6277,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_SIM900_SIM900_1_0"
+			(symbol "root_0_SIM800A_SIM800A_1_0"
 				(rectangle
 					(start 29.21 33.02)
 					(end -29.21 -33.02)
