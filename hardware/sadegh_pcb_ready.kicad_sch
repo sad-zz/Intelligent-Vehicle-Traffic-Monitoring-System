@@ -23391,7 +23391,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "2SJ196/BSS92"
+		(property "Value" "SI2309DS"
 			(at 756.666 404.876 0)
 			(effects
 				(font
@@ -23400,7 +23400,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
+		(property "Footprint" "custom_footprints:SOT-23_GDS"
 			(at 748.03 405.13 0)
 			(effects
 				(font
@@ -26719,7 +26719,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "Header 8"
+		(property "Value" "Phoenix_MSTB_8pin_5.08mm"
 			(at 910.59 328.93 0)
 			(effects
 				(font
@@ -26728,7 +26728,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTB_2,5_8-GF-5,08_1x08_P5.08mm_Horizontal_ThreadedFlange"
 			(at 910.59 303.53 0)
 			(effects
 				(font
@@ -34837,7 +34837,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "2SJ196/BSS92"
+		(property "Value" "SI2309DS"
 			(at 766.826 227.076 0)
 			(effects
 				(font
@@ -34846,7 +34846,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
+		(property "Footprint" "custom_footprints:SOT-23_GDS"
 			(at 758.19 227.33 0)
 			(effects
 				(font
@@ -35302,7 +35302,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "Header 4"
+		(property "Value" "Phoenix_MSTB_4pin_5.08mm"
 			(at 214.63 504.19 0)
 			(effects
 				(font
@@ -35311,7 +35311,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTB_2,5_4-GF-5,08_1x04_P5.08mm_Horizontal_ThreadedFlange"
 			(at 214.63 488.95 0)
 			(effects
 				(font
@@ -41063,7 +41063,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "2SJ196/BSS92"
+		(property "Value" "SI2309DS"
 			(at 764.286 290.576 0)
 			(effects
 				(font
@@ -41072,7 +41072,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
+		(property "Footprint" "custom_footprints:SOT-23_GDS"
 			(at 755.65 290.83 0)
 			(effects
 				(font
@@ -45546,7 +45546,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "2SJ196/BSS92"
+		(property "Value" "SI2309DS"
 			(at 764.286 341.376 0)
 			(effects
 				(font
@@ -45555,7 +45555,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
+		(property "Footprint" "custom_footprints:SOT-23_GDS"
 			(at 755.65 341.63 0)
 			(effects
 				(font
@@ -46925,3 +46925,212 @@
 	)
 	(embedded_fonts no)
 )
+	(symbol "custom:ICSP_Header6"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "6-pin ICSP/PICkit3 programming header"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ICSP_Header6_1_0"
+				(rectangle
+					(start 7.62 0)
+					(end 0 -17.78)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "MCLR"
+						(effects (font (size 1.27 1.27)))
+					)
+					(number "1"
+						(effects (font (size 1.27 1.27)))
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "VDD"
+						(effects (font (size 1.27 1.27)))
+					)
+					(number "2"
+						(effects (font (size 1.27 1.27)))
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects (font (size 1.27 1.27)))
+					)
+					(number "3"
+						(effects (font (size 1.27 1.27)))
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 5.08)
+					(name "PGD"
+						(effects (font (size 1.27 1.27)))
+					)
+					(number "4"
+						(effects (font (size 1.27 1.27)))
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 5.08)
+					(name "PGC"
+						(effects (font (size 1.27 1.27)))
+					)
+					(number "5"
+						(effects (font (size 1.27 1.27)))
+					)
+				)
+				(pin passive line
+					(at -5.08 -15.24 0)
+					(length 5.08)
+					(name "NC"
+						(effects (font (size 1.27 1.27)))
+					)
+					(number "6"
+						(effects (font (size 1.27 1.27)))
+					)
+				)
+			)
+			(embedded_fonts
+	(symbol
+		(lib_id "custom:ICSP_Header6")
+		(at 920.0 450.0 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed744473-9006-4948-b983-556f9ac412d7")
+		(property "Reference" "ICSP1"
+			(at 920.0 445.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PICkit3_ICSP"
+			(at 920.0 470.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+			(at 920.0 450.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 920.0 450.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PICkit3 ICSP Programming Header 6-pin 2.54mm"
+			(at 920.0 450.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fcab2ca6-e7b9-431a-8f29-7adfa753fb5a")
+		)
+		(pin "2"
+			(uuid "967956c6-1fc7-46f1-87ac-077bc01838a7")
+		)
+		(pin "3"
+			(uuid "3c395be0-a2f4-4b3e-845e-95d6e9127588")
+		)
+		(pin "4"
+			(uuid "7c2ce40e-03e2-4f60-8d64-8b9e281d6bbb")
+		)
+		(pin "5"
+			(uuid "56b38fd5-c7ce-45f5-89a2-f88825cd7283")
+		)
+		(pin "6"
+			(uuid "58726b4a-e15a-466a-ba9a-13be1a4dbbcf")
+		)
+		(instances
+			(project ""
+				(path "/6830c6b4-6be7-4c03-9ee4-6b48bd06f260"
+					(reference "ICSP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+ no)
+		)
+
