@@ -1544,7 +1544,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+			(property "Footprint" "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -18865,7 +18865,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_P3.4mm_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
 			(at 212.09 712.47 0)
 			(effects
 				(font
@@ -19258,7 +19258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm"
 			(at 723.9 732.536 0)
 			(effects
 				(font
@@ -23200,7 +23200,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm"
+		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
 			(at 433.07 715.01 0)
 			(effects
 				(font
@@ -36908,7 +36908,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm"
+		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
 			(at 252.73 715.01 0)
 			(effects
 				(font
@@ -37184,7 +37184,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_P3.4mm_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
 			(at 392.43 712.47 0)
 			(effects
 				(font
@@ -38463,7 +38463,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "RF_GSM:SIMCom_SIM800"
+		(property "Footprint" "RF_GSM:SIMCom_SIM800C"
 			(at 356.87 130.81 0)
 			(effects
 				(font
@@ -44156,7 +44156,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_P3.4mm_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
 			(at 209.55 572.77 0)
 			(effects
 				(font
@@ -46034,7 +46034,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm"
+		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
 			(at 252.73 572.77 0)
 			(effects
 				(font
