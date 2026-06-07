@@ -37605,7 +37605,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7881a15-4502-4937-bab5-9c3f1adac6b0")
-		(property "Reference" "U92"
+		(property "Reference" "U50"
 			(at 900.938 422.656 0)
 			(effects
 				(font
@@ -37915,7 +37915,7 @@
 		(instances
 			(project ""
 				(path "/6830c6b4-6be7-4c03-9ee4-6b48bd06f260"
-					(reference "U92")
+					(reference "U50")
 					(unit 3)
 				)
 			)
@@ -39791,7 +39791,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1132628-187e-4a68-8c98-3e73da7b1780")
-		(property "Reference" "U93"
+		(property "Reference" "U50"
 			(at 895.858 506.476 0)
 			(effects
 				(font
@@ -40101,7 +40101,7 @@
 		(instances
 			(project ""
 				(path "/6830c6b4-6be7-4c03-9ee4-6b48bd06f260"
-					(reference "U93")
+					(reference "U50")
 					(unit 4)
 				)
 			)
@@ -40667,7 +40667,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d51f9eb2-d760-4639-9992-7e14c7a47ccc")
-		(property "Reference" "U94"
+		(property "Reference" "U50"
 			(at 898.398 346.456 0)
 			(effects
 				(font
@@ -40977,7 +40977,7 @@
 		(instances
 			(project ""
 				(path "/6830c6b4-6be7-4c03-9ee4-6b48bd06f260"
-					(reference "U94")
+					(reference "U50")
 					(unit 2)
 				)
 			)
