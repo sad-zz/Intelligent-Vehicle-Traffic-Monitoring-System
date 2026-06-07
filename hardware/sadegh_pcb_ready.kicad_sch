@@ -18234,7 +18234,7 @@
 		)
 		(uuid "ffc99773-8023-42d8-b51c-96b8352843c5")
 	)
-	(hierarchical_label "MISO"
+	(global_label "MISO"
 		(shape output)
 		(at 694.69 699.77 180)
 		(effects
@@ -18245,7 +18245,7 @@
 		)
 		(uuid "0121e58e-87ea-4970-b901-aa3c96fe3cf6")
 	)
-	(hierarchical_label "MOSI"
+	(global_label "MOSI"
 		(shape input)
 		(at 671.83 697.23 180)
 		(effects
@@ -18256,18 +18256,7 @@
 		)
 		(uuid "047e18fa-41ca-43b9-8c57-0d1326be84aa")
 	)
-	(hierarchical_label "RTCCS"
-		(shape output)
-		(at 318.77 448.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "142ce6b7-5f42-4446-91bb-b55dda16fd07")
-	)
-	(hierarchical_label "SCK"
+	(global_label "SCK"
 		(shape input)
 		(at 293.37 463.55 180)
 		(effects
@@ -18278,7 +18267,7 @@
 		)
 		(uuid "17817efa-f604-445f-a69d-0009b22a8f2a")
 	)
-	(hierarchical_label "PWRKEY"
+	(global_label "PWRKEY"
 		(shape input)
 		(at 269.24 118.11 180)
 		(effects
@@ -18289,7 +18278,7 @@
 		)
 		(uuid "2e876b26-d373-4f7f-822a-d06a9a2bb274")
 	)
-	(hierarchical_label "mmcerror"
+	(global_label "mmcerror"
 		(shape output)
 		(at 504.19 519.43 180)
 		(effects
@@ -18300,7 +18289,7 @@
 		)
 		(uuid "2f5a02a8-43a9-4c68-936f-54329884ef66")
 	)
-	(hierarchical_label "mmcerror"
+	(global_label "mmcerror"
 		(shape output)
 		(at 407.67 412.75 180)
 		(effects
@@ -18311,7 +18300,7 @@
 		)
 		(uuid "30a5a4e9-cb6b-4389-815e-334030fc81cc")
 	)
-	(hierarchical_label "SIMONOFF"
+	(global_label "SIMONOFF"
 		(shape passive)
 		(at 410.21 405.13 180)
 		(effects
@@ -18322,7 +18311,7 @@
 		)
 		(uuid "41947da2-d476-4515-a0ea-fa2e9f5f384c")
 	)
-	(hierarchical_label "MDMSTAT"
+	(global_label "MDMSTAT"
 		(shape output)
 		(at 331.47 85.09 180)
 		(effects
@@ -18333,18 +18322,7 @@
 		)
 		(uuid "4d4cbe18-4007-4f90-8d0b-9c3eaf6535df")
 	)
-	(hierarchical_label "MMCCS"
-		(shape input)
-		(at 651.51 692.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4dcd238c-e837-4a10-85a5-1c6a921a59d7")
-	)
-	(hierarchical_label "SIM900_TXD"
+	(global_label "SIM900_TXD"
 		(shape output)
 		(at 283.21 458.47 0)
 		(effects
@@ -18355,7 +18333,7 @@
 		)
 		(uuid "51ee90f7-ff4c-4eb3-9a31-b9aaf4433783")
 	)
-	(hierarchical_label "SIM900_RXD"
+	(global_label "SIM900_RXD"
 		(shape input)
 		(at 247.65 461.01 0)
 		(effects
@@ -18366,7 +18344,7 @@
 		)
 		(uuid "560d415c-d287-4e4c-9c2f-f93807db4a3f")
 	)
-	(hierarchical_label "FT232RL_TXD"
+	(global_label "FT232RL_TXD"
 		(shape output)
 		(at 946.15 600.71 0)
 		(effects
@@ -18377,7 +18355,7 @@
 		)
 		(uuid "5d93c1ea-ccd5-4d66-aff8-758b8611065d")
 	)
-	(hierarchical_label "MOSI"
+	(global_label "MOSI"
 		(shape input)
 		(at 293.37 455.93 180)
 		(effects
@@ -18388,7 +18366,7 @@
 		)
 		(uuid "5ffdbd71-1787-43cb-a329-acd9965fdc71")
 	)
-	(hierarchical_label "loopselB"
+	(global_label "loopselB"
 		(shape passive)
 		(at 532.13 265.43 180)
 		(effects
@@ -18399,7 +18377,7 @@
 		)
 		(uuid "65397c26-625e-45c2-936e-4e141eb65d54")
 	)
-	(hierarchical_label "loopselB"
+	(global_label "loopselB"
 		(shape passive)
 		(at 407.67 438.15 180)
 		(effects
@@ -18410,7 +18388,7 @@
 		)
 		(uuid "6deec3e5-cb29-428a-a5b1-c19c19432b8d")
 	)
-	(hierarchical_label "CAPTURE"
+	(global_label "CAPTURE"
 		(shape passive)
 		(at 405.13 267.97 180)
 		(effects
@@ -18421,7 +18399,7 @@
 		)
 		(uuid "6f9d4488-2b35-4c1f-af61-5af57acbdd2a")
 	)
-	(hierarchical_label "PWRKEY"
+	(global_label "PWRKEY"
 		(shape input)
 		(at 407.67 417.83 180)
 		(effects
@@ -18432,7 +18410,7 @@
 		)
 		(uuid "7258d9c5-aee9-4c89-8023-838f8d034cfa")
 	)
-	(hierarchical_label "SIM900_RXD"
+	(global_label "SIM900_RXD"
 		(shape input)
 		(at 313.69 133.35 180)
 		(effects
@@ -18443,7 +18421,7 @@
 		)
 		(uuid "7268bedf-d703-43b0-b7e6-c52331742f94")
 	)
-	(hierarchical_label "SCK"
+	(global_label "SCK"
 		(shape input)
 		(at 661.67 694.69 180)
 		(effects
@@ -18454,7 +18432,7 @@
 		)
 		(uuid "7f09ebc5-a961-48ef-bb3b-32a06bd62a7c")
 	)
-	(hierarchical_label "MISO"
+	(global_label "MISO"
 		(shape output)
 		(at 313.69 453.39 180)
 		(effects
@@ -18465,7 +18443,7 @@
 		)
 		(uuid "847da0bf-ede3-49c6-a418-bbdf720940d6")
 	)
-	(hierarchical_label "MDMSTAT"
+	(global_label "MDMSTAT"
 		(shape output)
 		(at 407.67 415.29 180)
 		(effects
@@ -18476,7 +18454,7 @@
 		)
 		(uuid "8df8cf56-34cc-4dda-bc48-c3889e4828e6")
 	)
-	(hierarchical_label "loopselB"
+	(global_label "loopselB"
 		(shape passive)
 		(at 410.21 260.35 180)
 		(effects
@@ -18487,18 +18465,7 @@
 		)
 		(uuid "93df0320-c0e5-4b60-899a-17d55d70a48a")
 	)
-	(hierarchical_label "MMCCS"
-		(shape output)
-		(at 318.77 450.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a2df2ee0-2054-4375-a73e-bbddc45cc085")
-	)
-	(hierarchical_label "FT232RL_RXD"
+	(global_label "FT232RL_RXD"
 		(shape input)
 		(at 946.15 603.25 0)
 		(effects
@@ -18509,7 +18476,7 @@
 		)
 		(uuid "a418e55d-da88-475b-8228-338f2751aafa")
 	)
-	(hierarchical_label "MOSI"
+	(global_label "MOSI"
 		(shape input)
 		(at 668.02 731.266 180)
 		(effects
@@ -18520,7 +18487,7 @@
 		)
 		(uuid "ac377367-5a03-4ced-84ee-550c342b1f0a")
 	)
-	(hierarchical_label "loopselC"
+	(global_label "loopselC"
 		(shape passive)
 		(at 532.13 267.97 180)
 		(effects
@@ -18531,7 +18498,7 @@
 		)
 		(uuid "aef77833-0e26-4210-bd8b-3a928e94c385")
 	)
-	(hierarchical_label "FT232RL_TXD"
+	(global_label "FT232RL_TXD"
 		(shape output)
 		(at 410.21 427.99 180)
 		(effects
@@ -18542,7 +18509,7 @@
 		)
 		(uuid "b0748fbb-bb2b-4191-b21d-98a127120013")
 	)
-	(hierarchical_label "loopselA"
+	(global_label "loopselA"
 		(shape passive)
 		(at 407.67 435.61 180)
 		(effects
@@ -18553,7 +18520,7 @@
 		)
 		(uuid "bc36b15e-e330-4a28-8979-b6953e665802")
 	)
-	(hierarchical_label "SCK"
+	(global_label "SCK"
 		(shape input)
 		(at 657.86 728.726 180)
 		(effects
@@ -18564,29 +18531,7 @@
 		)
 		(uuid "cba7036a-f176-48e3-b08a-d8c14269e6d0")
 	)
-	(hierarchical_label "MMCCS"
-		(shape input)
-		(at 647.7 726.186 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d2240959-4316-4499-85db-e30db75859b7")
-	)
-	(hierarchical_label "MMCINT"
-		(shape output)
-		(at 461.01 458.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d2c78989-cf7a-4ed4-8b67-e1eb88cb3428")
-	)
-	(hierarchical_label "loopselA"
+	(global_label "loopselA"
 		(shape passive)
 		(at 532.13 262.89 180)
 		(effects
@@ -18597,7 +18542,7 @@
 		)
 		(uuid "d96c120a-1d8c-4262-8af3-e2207141cf14")
 	)
-	(hierarchical_label "MISO"
+	(global_label "MISO"
 		(shape output)
 		(at 681.99 733.806 180)
 		(effects
@@ -18608,7 +18553,7 @@
 		)
 		(uuid "db2615e2-98ca-4d40-b17f-99043726fb7d")
 	)
-	(hierarchical_label "loopselC"
+	(global_label "loopselC"
 		(shape passive)
 		(at 410.21 262.89 180)
 		(effects
@@ -18619,7 +18564,7 @@
 		)
 		(uuid "dc8dd994-5aec-41ee-96d8-77bf4b867901")
 	)
-	(hierarchical_label "loopselA"
+	(global_label "loopselA"
 		(shape passive)
 		(at 410.21 257.81 180)
 		(effects
@@ -18630,7 +18575,7 @@
 		)
 		(uuid "e8c42dd4-a4be-4157-bba6-b0a97e82239e")
 	)
-	(hierarchical_label "NetLight"
+	(global_label "NetLight"
 		(shape output)
 		(at 433.07 82.55 0)
 		(effects
@@ -18641,7 +18586,7 @@
 		)
 		(uuid "ef27e913-150e-4db3-a32c-314ec5ae84df")
 	)
-	(hierarchical_label "NetLight"
+	(global_label "NetLight"
 		(shape output)
 		(at 504.19 516.89 180)
 		(effects
@@ -18652,7 +18597,7 @@
 		)
 		(uuid "f399699c-b245-44de-abb8-216bd18a4633")
 	)
-	(hierarchical_label "SIM900_TXD"
+	(global_label "SIM900_TXD"
 		(shape output)
 		(at 313.69 130.81 180)
 		(effects
@@ -18663,7 +18608,7 @@
 		)
 		(uuid "f80d2857-a111-484f-81a1-539dac3aeccc")
 	)
-	(hierarchical_label "SIMONOFF"
+	(global_label "SIMONOFF"
 		(shape passive)
 		(at 204.47 577.85 180)
 		(effects
@@ -18674,7 +18619,7 @@
 		)
 		(uuid "f8124f13-028f-4d1f-82f7-86c383c16654")
 	)
-	(hierarchical_label "CAPTURE"
+	(global_label "CAPTURE"
 		(shape passive)
 		(at 407.67 410.21 180)
 		(effects
@@ -18685,7 +18630,7 @@
 		)
 		(uuid "f8e5177c-9fb7-4cda-9a98-390d898fb422")
 	)
-	(hierarchical_label "FT232RL_RXD"
+	(global_label "FT232RL_RXD"
 		(shape input)
 		(at 410.21 425.45 180)
 		(effects
@@ -18696,7 +18641,7 @@
 		)
 		(uuid "f976e3ce-1d00-412f-a9a0-29fc5b1e822a")
 	)
-	(hierarchical_label "loopselC"
+	(global_label "loopselC"
 		(shape passive)
 		(at 407.67 440.69 180)
 		(effects
