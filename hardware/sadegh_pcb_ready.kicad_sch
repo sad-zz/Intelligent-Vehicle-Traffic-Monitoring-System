@@ -321,7 +321,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib"
+		(symbol "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT"
 			(pin_numbers
 				(hide yes)
 			)
@@ -383,7 +383,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_2N3904_FSC Discrete BJT.IntLib_1_0"
+			(symbol "root_0_2N3904_FSC Discrete BJT_1_0"
 				(polyline
 					(pts
 						(xy 0 -0.254) (xy 0 -4.826)
@@ -489,7 +489,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode.IntLib"
+		(symbol "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode"
 			(pin_numbers
 				(hide yes)
 			)
@@ -551,7 +551,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_1N4750A_FSC Discrete Diode.IntLib_1_0"
+			(symbol "root_1_1N4750A_FSC Discrete Diode_1_0"
 				(polyline
 					(pts
 						(xy 5.08 3.556) (xy 4.064 2.54) (xy 1.016 2.54) (xy 0 1.524)
@@ -615,7 +615,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FT232RL:root_0_Component_1_FT232RL.SchLib"
+		(symbol "FT232RL:root_0_Component_1_FT232RL"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -671,7 +671,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Component_1_FT232RL.SchLib_1_0"
+			(symbol "root_0_Component_1_FT232RL_1_0"
 				(rectangle
 					(start 17.78 20.32)
 					(end -17.78 -20.32)
@@ -1200,7 +1200,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power.IntLib"
+		(symbol "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1262,7 +1262,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power.IntLib_1_0"
+			(symbol "root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power_1_0"
 				(polyline
 					(pts
 						(xy 0 2.54) (xy 2.032 2.54)
@@ -1524,7 +1524,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MMC:root_0_Component_1_MMC.SchLib"
+		(symbol "MMC:root_0_Component_1_MMC"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1580,7 +1580,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Component_1_MMC.SchLib_1_0"
+			(symbol "root_0_Component_1_MMC_1_0"
 				(rectangle
 					(start 10.16 10.16)
 					(end -10.16 -7.62)
@@ -2002,7 +2002,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Microchip DSC 16-Bit dsPIC30F:root_0_DSPIC30F4011-30I/P_Microchip DSC 16-Bit dsPIC30F.IntLib"
+		(symbol "Microchip DSC 16-Bit dsPIC30F:root_0_DSPIC30F4011-30I/P_Microchip DSC 16-Bit dsPIC30F"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2058,7 +2058,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_DSPIC30F4011-30I/P_Microchip DSC 16-Bit dsPIC30F.IntLib_1_0"
+			(symbol "root_0_DSPIC30F4011-30I/P_Microchip DSC 16-Bit dsPIC30F_1_0"
 				(rectangle
 					(start 58.42 0)
 					(end 0 -68.58)
@@ -2794,7 +2794,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Connectors:root_0_Header 11_Miscellaneous Connectors.IntLib"
+		(symbol "Miscellaneous Connectors:root_0_Header 11_Miscellaneous Connectors"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2853,7 +2853,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Header 11_Miscellaneous Connectors.IntLib_1_0"
+			(symbol "root_0_Header 11_Miscellaneous Connectors_1_0"
 				(rectangle
 					(start 7.62 0)
 					(end 0 -30.48)
@@ -3067,7 +3067,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Connectors:root_0_Header 4_Miscellaneous Connectors.IntLib"
+		(symbol "Miscellaneous Connectors:root_0_Header 4_Miscellaneous Connectors"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3126,7 +3126,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Header 4_Miscellaneous Connectors.IntLib_1_0"
+			(symbol "root_0_Header 4_Miscellaneous Connectors_1_0"
 				(rectangle
 					(start 7.62 0)
 					(end 0 -12.7)
@@ -3214,7 +3214,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Connectors:root_0_Header 8_Miscellaneous Connectors.IntLib"
+		(symbol "Miscellaneous Connectors:root_0_Header 8_Miscellaneous Connectors"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3273,7 +3273,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Header 8_Miscellaneous Connectors.IntLib_1_0"
+			(symbol "root_0_Header 8_Miscellaneous Connectors_1_0"
 				(rectangle
 					(start 7.62 0)
 					(end 0 -22.86)
@@ -3433,7 +3433,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Connectors:root_0_SMB_Miscellaneous Connectors.IntLib"
+		(symbol "Miscellaneous Connectors:root_0_SMB_Miscellaneous Connectors"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3495,7 +3495,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_SMB_Miscellaneous Connectors.IntLib_1_0"
+			(symbol "root_0_SMB_Miscellaneous Connectors_1_0"
 				(circle
 					(center 2.54 -2.54)
 					(radius 0.508)
@@ -3593,7 +3593,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Connectors:root_2_Header 3_Miscellaneous Connectors.IntLib"
+		(symbol "Miscellaneous Connectors:root_2_Header 3_Miscellaneous Connectors"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3652,7 +3652,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_2_Header 3_Miscellaneous Connectors.IntLib_1_0"
+			(symbol "root_2_Header 3_Miscellaneous Connectors_1_0"
 				(rectangle
 					(start 0 10.16)
 					(end -7.62 0)
@@ -3722,7 +3722,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_0_2N3904_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_0_2N3904_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3784,7 +3784,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_2N3904_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_0_2N3904_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 0 -0.254) (xy 0 -4.826)
@@ -3890,7 +3890,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_0_Cap_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_0_Cap_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3952,7 +3952,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Cap_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_0_Cap_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 0 -2.54) (xy 0.762 -2.54)
@@ -4040,7 +4040,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_0_Diode 1N4001_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_0_Diode 1N4001_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4102,7 +4102,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Diode 1N4001_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_0_Diode 1N4001_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 0 -5.08) (xy 2.54 -2.54) (xy 0 0) (xy 0 -5.08)
@@ -4166,7 +4166,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4228,7 +4228,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Inductor Iron_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_0_Inductor Iron_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 0 0) (xy 10.16 0)
@@ -4388,7 +4388,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4450,7 +4450,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Res1_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_0_Res1_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 5.08 -2.54) (xy 4.064 -2.54) (xy 3.81 -3.048) (xy 3.302 -2.032) (xy 2.794 -3.048) (xy 2.286 -2.032)
@@ -4503,7 +4503,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_0_mirrored_Diode 1N4007_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_0_mirrored_Diode 1N4007_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4565,7 +4565,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_mirrored_Diode 1N4007_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_0_mirrored_Diode 1N4007_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -2.54 -5.08)
@@ -4629,7 +4629,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4691,7 +4691,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -4779,7 +4779,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4841,7 +4841,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Diode 1N4001_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_1_Diode 1N4001_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 0 2.54) (xy 5.08 2.54)
@@ -4905,7 +4905,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib"
+		(symbol "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4967,7 +4967,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Res1_Miscellaneous Devices.IntLib_1_0"
+			(symbol "root_1_Res1_Miscellaneous Devices_1_0"
 				(polyline
 					(pts
 						(xy 2.54 5.08) (xy 2.54 4.064) (xy 3.048 3.81) (xy 2.032 3.302) (xy 3.048 2.794) (xy 2.032 2.286)
@@ -5020,7 +5020,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1"
+		(symbol "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -5082,7 +5082,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_1_0"
+			(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_1_0"
 				(polyline
 					(pts
 						(xy -4.572 0) (xy -0.508 0)
@@ -5194,7 +5194,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NSC Comparator:root_0_LM339J_NSC Comparator.IntLib"
+		(symbol "NSC Comparator:root_0_LM339J_NSC Comparator"
 			(pin_names
 				(hide yes)
 			)
@@ -5253,7 +5253,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_LM339J_NSC Comparator.IntLib_0_0"
+			(symbol "root_0_LM339J_NSC Comparator_0_0"
 				(pin power_in line
 					(at 5.08 5.08 270)
 					(length 5.08)
@@ -5291,7 +5291,7 @@
 					)
 				)
 			)
-			(symbol "root_0_LM339J_NSC Comparator.IntLib_1_0"
+			(symbol "root_0_LM339J_NSC Comparator_1_0"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -10.16)
@@ -5443,7 +5443,7 @@
 					)
 				)
 			)
-			(symbol "root_0_LM339J_NSC Comparator.IntLib_2_0"
+			(symbol "root_0_LM339J_NSC Comparator_2_0"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -10.16)
@@ -5595,7 +5595,7 @@
 					)
 				)
 			)
-			(symbol "root_0_LM339J_NSC Comparator.IntLib_3_0"
+			(symbol "root_0_LM339J_NSC Comparator_3_0"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -10.16)
@@ -5747,7 +5747,7 @@
 					)
 				)
 			)
-			(symbol "root_0_LM339J_NSC Comparator.IntLib_4_0"
+			(symbol "root_0_LM339J_NSC Comparator_4_0"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -10.16)
@@ -5901,7 +5901,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator.IntLib"
+		(symbol "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5957,7 +5957,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator.IntLib_1_0"
+			(symbol "root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator_1_0"
 				(rectangle
 					(start 15.24 0)
 					(end 0 -12.7)
@@ -6221,7 +6221,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SIM900:root_0_SIM800A_SIM800A.SchLib"
+		(symbol "SIM900:root_0_SIM800A_SIM800A"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -6277,7 +6277,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_SIM900_SIM900.SchLib_1_0"
+			(symbol "root_0_SIM900_SIM900_1_0"
 				(rectangle
 					(start 29.21 33.02)
 					(end -29.21 -33.02)
@@ -7526,7 +7526,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SIMCARD:root_0_Component_1_SIMCARD.SchLib"
+		(symbol "SIMCARD:root_0_Component_1_SIMCARD"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -7582,7 +7582,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Component_1_SIMCARD.SchLib_1_0"
+			(symbol "root_0_Component_1_SIMCARD_1_0"
 				(polyline
 					(pts
 						(xy -17.78 10.16) (xy 12.7 10.16) (xy 17.78 7.62) (xy 17.78 -7.62) (xy -17.78 -7.62) (xy -17.78 10.16)
@@ -7756,7 +7756,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ST Logic Multiplexer:root_0_HCF4051BEY_ST Logic Multiplexer.IntLib"
+		(symbol "ST Logic Multiplexer:root_0_HCF4051BEY_ST Logic Multiplexer"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -7812,7 +7812,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_HCF4051BEY_ST Logic Multiplexer.IntLib_1_0"
+			(symbol "root_0_HCF4051BEY_ST Logic Multiplexer_1_0"
 				(rectangle
 					(start 20.32 0)
 					(end 0 -27.94)
@@ -8271,7 +8271,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "USB:root_0_Component_1_USB.SchLib"
+		(symbol "USB:root_0_Component_1_USB"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -8327,7 +8327,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Component_1_USB.SchLib_1_0"
+			(symbol "root_0_Component_1_USB_1_0"
 				(rectangle
 					(start 10.16 12.7)
 					(end -10.16 -12.7)
@@ -8677,7 +8677,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_0_Inductor Iron_Miscellaneous Devices.IntLib_1"
+		(symbol "root_0_Inductor Iron_Miscellaneous Devices_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8739,7 +8739,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_0_Inductor Iron_Miscellaneous Devices.IntLib_1_1_0"
+			(symbol "root_0_Inductor Iron_Miscellaneous Devices_1_1_0"
 				(polyline
 					(pts
 						(xy 0 0) (xy 10.16 0)
@@ -8899,7 +8899,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_1"
+		(symbol "root_1_Cap_Miscellaneous Devices_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8961,7 +8961,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_1_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_1_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9049,7 +9049,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_10"
+		(symbol "root_1_Cap_Miscellaneous Devices_10"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9111,7 +9111,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_10_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_10_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9199,7 +9199,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_11"
+		(symbol "root_1_Cap_Miscellaneous Devices_11"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9261,7 +9261,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_11_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_11_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9349,7 +9349,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_12"
+		(symbol "root_1_Cap_Miscellaneous Devices_12"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9411,7 +9411,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_12_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_12_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9499,7 +9499,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_13"
+		(symbol "root_1_Cap_Miscellaneous Devices_13"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9561,7 +9561,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_13_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_13_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9649,7 +9649,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_14"
+		(symbol "root_1_Cap_Miscellaneous Devices_14"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9711,7 +9711,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_14_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_14_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9799,7 +9799,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_15"
+		(symbol "root_1_Cap_Miscellaneous Devices_15"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9861,7 +9861,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_15_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_15_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -9949,7 +9949,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_16"
+		(symbol "root_1_Cap_Miscellaneous Devices_16"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10011,7 +10011,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_16_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_16_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10099,7 +10099,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_17"
+		(symbol "root_1_Cap_Miscellaneous Devices_17"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10161,7 +10161,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_17_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_17_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10249,7 +10249,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_2"
+		(symbol "root_1_Cap_Miscellaneous Devices_2"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10311,7 +10311,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_2_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_2_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10399,7 +10399,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_3"
+		(symbol "root_1_Cap_Miscellaneous Devices_3"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10461,7 +10461,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_3_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_3_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10549,7 +10549,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_4"
+		(symbol "root_1_Cap_Miscellaneous Devices_4"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10611,7 +10611,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_4_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_4_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10699,7 +10699,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_5"
+		(symbol "root_1_Cap_Miscellaneous Devices_5"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10761,7 +10761,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_5_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_5_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10849,7 +10849,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_6"
+		(symbol "root_1_Cap_Miscellaneous Devices_6"
 			(pin_numbers
 				(hide yes)
 			)
@@ -10911,7 +10911,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_6_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_6_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -10999,7 +10999,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_7"
+		(symbol "root_1_Cap_Miscellaneous Devices_7"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11061,7 +11061,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_7_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_7_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -11149,7 +11149,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_8"
+		(symbol "root_1_Cap_Miscellaneous Devices_8"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11211,7 +11211,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_8_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_8_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -11299,7 +11299,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_1_Cap_Miscellaneous Devices.IntLib_9"
+		(symbol "root_1_Cap_Miscellaneous Devices_9"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11361,7 +11361,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_Cap_Miscellaneous Devices.IntLib_9_1_0"
+			(symbol "root_1_Cap_Miscellaneous Devices_9_1_0"
 				(polyline
 					(pts
 						(xy 0.508 1.778) (xy 4.572 1.778)
@@ -11449,7 +11449,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_1"
+		(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11511,7 +11511,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_1_1_0"
+			(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_1_1_0"
 				(polyline
 					(pts
 						(xy -4.572 0) (xy -0.508 0)
@@ -11623,7 +11623,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_2"
+		(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_2"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11685,7 +11685,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_2_1_0"
+			(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_2_1_0"
 				(polyline
 					(pts
 						(xy -4.572 0) (xy -0.508 0)
@@ -11797,7 +11797,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_3"
+		(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_3"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11859,7 +11859,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_3_1_0"
+			(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_3_1_0"
 				(polyline
 					(pts
 						(xy -4.572 0) (xy -0.508 0)
@@ -11971,7 +11971,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_4"
+		(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_4"
 			(pin_numbers
 				(hide yes)
 			)
@@ -12033,7 +12033,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_4_1_0"
+			(symbol "root_3_Cap Pol1_Miscellaneous Devices_1_4_1_0"
 				(polyline
 					(pts
 						(xy -4.572 0) (xy -0.508 0)
@@ -19714,7 +19714,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator.IntLib")
+		(lib_id "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator")
 		(at 212.09 712.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19906,7 +19906,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_2")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 308.61 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20318,7 +20318,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 798.83 356.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20456,7 +20456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 565.15 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20594,7 +20594,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 885.19 372.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20856,7 +20856,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 234.95 750.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21056,7 +21056,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 369.57 717.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21195,7 +21195,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_1")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 417.83 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21457,7 +21457,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 651.51 367.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21649,7 +21649,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 740.41 374.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21849,7 +21849,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 798.83 519.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22111,7 +22111,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Connectors:root_0_SMB_Miscellaneous Connectors.IntLib")
+		(lib_id "Miscellaneous Connectors:root_0_SMB_Miscellaneous Connectors")
 		(at 349.25 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22334,7 +22334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 910.59 425.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22534,7 +22534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 798.83 433.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22734,7 +22734,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode.IntLib")
+		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode")
 		(at 831.85 336.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23047,7 +23047,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 400.05 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23185,7 +23185,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 737.87 433.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23323,7 +23323,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MMC:root_0_Component_1_MMC.SchLib")
+		(lib_id "MMC:root_0_Component_1_MMC")
 		(at 712.47 694.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23479,7 +23479,7 @@
 	)
 	(symbol
 		(lib_name "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_4")
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 791.21 608.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23617,7 +23617,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 842.01 422.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23942,7 +23942,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_9")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 158.75 389.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24142,7 +24142,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices")
 		(at 433.07 715.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24342,7 +24342,7 @@
 		)
 	)
 	(symbol
-		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power.IntLib")
+		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power")
 		(at 748.03 405.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24926,7 +24926,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_16")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 740.41 692.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25065,7 +25065,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_12")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 191.77 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25203,7 +25203,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Connectors:root_0_Header 11_Miscellaneous Connectors.IntLib")
+		(lib_id "Miscellaneous Connectors:root_0_Header 11_Miscellaneous Connectors")
 		(at 514.35 499.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25391,7 +25391,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 651.51 425.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25835,7 +25835,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator.IntLib")
+		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator")
 		(at 872.49 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26160,7 +26160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 623.57 461.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26298,7 +26298,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 463.55 720.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26747,7 +26747,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_16")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 703.58 747.776 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26886,7 +26886,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_11")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 201.93 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27086,7 +27086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 651.51 316.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27465,7 +27465,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_13")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 181.61 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27603,7 +27603,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 234.95 593.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27741,7 +27741,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Connectors:root_0_Header 8_Miscellaneous Connectors.IntLib")
+		(lib_id "Miscellaneous Connectors:root_0_Header 8_Miscellaneous Connectors")
 		(at 910.59 303.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27982,7 +27982,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 875.03 283.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28182,7 +28182,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 770.89 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28320,7 +28320,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 671.83 427.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28512,7 +28512,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 824.23 666.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28651,7 +28651,7 @@
 	)
 	(symbol
 		(lib_name "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_3")
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 290.83 722.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28851,7 +28851,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Cap_Miscellaneous Devices")
 		(at 303.53 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28990,7 +28990,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_6")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 212.09 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29190,7 +29190,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 768.35 316.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29506,7 +29506,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ST Logic Multiplexer:root_0_HCF4051BEY_ST Logic Multiplexer.IntLib")
+		(lib_id "ST Logic Multiplexer:root_0_HCF4051BEY_ST Logic Multiplexer")
 		(at 537.21 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29737,7 +29737,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 234.95 740.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29937,7 +29937,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 791.21 726.186 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30648,7 +30648,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 666.75 318.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30840,7 +30840,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 908.05 349.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31102,7 +31102,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 836.93 506.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31241,7 +31241,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_8")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 171.45 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31442,7 +31442,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_14")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 877.57 638.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31705,7 +31705,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 234.95 603.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31905,7 +31905,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices")
 		(at 425.45 725.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32104,7 +32104,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 588.01 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32517,7 +32517,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_14")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 765.81 732.536 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32655,7 +32655,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SIMCARD:root_0_Component_1_SIMCARD.SchLib")
+		(lib_id "SIMCARD:root_0_Component_1_SIMCARD")
 		(at 433.07 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32743,7 +32743,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_5")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 394.97 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32881,7 +32881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 580.39 267.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33020,7 +33020,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_14")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 792.48 684.276 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33158,7 +33158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices")
 		(at 245.11 725.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33357,7 +33357,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 415.29 750.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33495,7 +33495,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 410.21 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33757,7 +33757,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Cap_Miscellaneous Devices")
 		(at 397.51 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34024,7 +34024,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_15")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 816.61 610.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34286,7 +34286,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Microchip DSC 16-Bit dsPIC30F:root_0_DSPIC30F4011-30I/P_Microchip DSC 16-Bit dsPIC30F.IntLib")
+		(lib_id "Microchip DSC 16-Bit dsPIC30F:root_0_DSPIC30F4011-30I/P_Microchip DSC 16-Bit dsPIC30F")
 		(at 326.39 397.51 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34691,7 +34691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 179.07 577.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34891,7 +34891,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 854.71 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -35029,7 +35029,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 768.35 367.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -35407,7 +35407,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 847.09 346.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -35608,7 +35608,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode.IntLib")
+		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode")
 		(at 824.23 336.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -35797,7 +35797,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 798.83 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -35935,7 +35935,7 @@
 		)
 	)
 	(symbol
-		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power.IntLib")
+		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power")
 		(at 758.19 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -36200,7 +36200,7 @@
 	)
 	(symbol
 		(lib_name "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_1")
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 356.87 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -36400,7 +36400,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Connectors:root_0_Header 4_Miscellaneous Connectors.IntLib")
+		(lib_id "Miscellaneous Connectors:root_0_Header 4_Miscellaneous Connectors")
 		(at 214.63 488.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -36567,7 +36567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode.IntLib")
+		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode")
 		(at 808.99 336.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -36818,7 +36818,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode.IntLib")
+		(lib_id "FSC Discrete Diode:root_1_1N4750A_FSC Discrete Diode")
 		(at 816.61 336.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37008,7 +37008,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_14")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 819.15 684.276 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37332,7 +37332,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_2N3904_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_2N3904_Miscellaneous Devices")
 		(at 288.29 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37524,7 +37524,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 770.89 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37716,7 +37716,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 902.97 509.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37916,7 +37916,7 @@
 		)
 	)
 	(symbol
-		(lib_id "USB:root_0_Component_1_USB.SchLib")
+		(lib_id "USB:root_0_Component_1_USB")
 		(at 847.09 689.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37997,7 +37997,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices")
 		(at 252.73 715.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -38135,7 +38135,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 400.05 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -38273,7 +38273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator.IntLib")
+		(lib_id "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator")
 		(at 392.43 712.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -38712,7 +38712,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator.IntLib")
+		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator")
 		(at 885.19 422.91 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -39161,7 +39161,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Diode 1N4001_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Diode 1N4001_Miscellaneous Devices")
 		(at 453.39 715.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -39360,7 +39360,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 669.29 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -39552,7 +39552,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SIM900:root_0_SIM800A_SIM800A.SchLib")
+		(lib_id "SIM900:root_0_SIM800A_SIM800A")
 		(at 356.87 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -39882,7 +39882,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_10")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 151.13 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -40021,7 +40021,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_7")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 222.25 392.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -40159,7 +40159,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 768.35 412.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -40421,7 +40421,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 242.57 394.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -40622,7 +40622,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_3")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 435.61 407.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -40760,7 +40760,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 425.45 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -40898,7 +40898,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator.IntLib")
+		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator")
 		(at 880.11 506.73 0)
 		(unit 4)
 		(exclude_from_sim no)
@@ -41533,7 +41533,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Connectors:root_2_Header 3_Miscellaneous Connectors.IntLib")
+		(lib_id "Miscellaneous Connectors:root_2_Header 3_Miscellaneous Connectors")
 		(at 242.57 466.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -41636,7 +41636,7 @@
 	)
 	(symbol
 		(lib_name "root_3_Cap Pol1_Miscellaneous Devices.IntLib_1_2")
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 422.91 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -41774,7 +41774,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator.IntLib")
+		(lib_id "NSC Comparator:root_0_LM339J_NSC Comparator")
 		(at 882.65 346.71 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -42161,7 +42161,7 @@
 		)
 	)
 	(symbol
-		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power.IntLib")
+		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power")
 		(at 755.65 290.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -42363,7 +42363,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 270.51 720.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -42501,7 +42501,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 274.32 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -42639,7 +42639,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 400.05 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -42777,7 +42777,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 275.59 577.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -42915,7 +42915,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 742.95 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -43239,7 +43239,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_mirrored_Diode 1N4007_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_mirrored_Diode 1N4007_Miscellaneous Devices")
 		(at 166.37 481.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -43438,7 +43438,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 768.35 354.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -43577,7 +43577,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_4")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 417.83 405.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -43715,7 +43715,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FT232RL:root_0_Component_1_FT232RL.SchLib")
+		(lib_id "FT232RL:root_0_Component_1_FT232RL")
 		(at 908.05 615.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -43924,7 +43924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 882.65 532.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -44062,7 +44062,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 651.51 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -44316,7 +44316,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Diode 1N4001_Miscellaneous Devices")
 		(at 245.11 588.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -44639,7 +44639,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 445.77 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -44777,7 +44777,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 461.01 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -44915,7 +44915,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 902.97 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -45053,7 +45053,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 666.75 367.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -45245,7 +45245,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator.IntLib")
+		(lib_id "ON Semi Power Mgt Voltage Regulator:root_0_LM2576D2T-ADJ_ON Semi Power Mgt Voltage Regulator")
 		(at 209.55 572.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -45561,7 +45561,7 @@
 	)
 	(symbol
 		(lib_name "root_1_Cap_Miscellaneous Devices.IntLib_17")
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 806.45 610.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -45827,7 +45827,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ST Logic Multiplexer:root_0_HCF4051BEY_ST Logic Multiplexer.IntLib")
+		(lib_id "ST Logic Multiplexer:root_0_HCF4051BEY_ST Logic Multiplexer")
 		(at 415.29 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -46182,7 +46182,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices.IntLib_1")
+		(lib_id "Miscellaneous Devices:root_3_Cap Pol1_Miscellaneous Devices_1")
 		(at 189.23 717.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -46382,7 +46382,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 572.77 270.51 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -46644,7 +46644,7 @@
 		)
 	)
 	(symbol
-		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power.IntLib")
+		(lib_id "IR Discrete MOSFET - Power:root_2_mirrored_IRF9540N_IR Discrete MOSFET - Power")
 		(at 755.65 341.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -46846,7 +46846,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 415.29 740.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -46984,7 +46984,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Cap_Miscellaneous Devices")
 		(at 740.41 323.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -47123,7 +47123,7 @@
 	)
 	(symbol
 		(lib_name "root_0_Inductor Iron_Miscellaneous Devices.IntLib_1")
-		(lib_id "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Inductor Iron_Miscellaneous Devices")
 		(at 252.73 572.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -47323,7 +47323,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT.IntLib")
+		(lib_id "FSC Discrete BJT:root_0_2N3904_FSC Discrete BJT")
 		(at 768.35 425.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -47515,7 +47515,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_1_Res1_Miscellaneous Devices")
 		(at 768.35 303.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -47715,7 +47715,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices.IntLib")
+		(lib_id "Miscellaneous Devices:root_0_Res1_Miscellaneous Devices")
 		(at 887.73 448.31 0)
 		(unit 1)
 		(exclude_from_sim no)
