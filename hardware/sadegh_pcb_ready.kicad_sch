@@ -1544,7 +1544,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm"
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -18865,7 +18865,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin6"
 			(at 212.09 712.47 0)
 			(effects
 				(font
@@ -19057,7 +19057,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 308.61 379.73 0)
 			(effects
 				(font
@@ -19258,7 +19258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 723.9 732.536 0)
 			(effects
 				(font
@@ -19469,7 +19469,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 798.83 356.87 0)
 			(effects
 				(font
@@ -19607,7 +19607,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 565.15 273.05 0)
 			(effects
 				(font
@@ -19745,7 +19745,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 885.19 372.11 0)
 			(effects
 				(font
@@ -20007,7 +20007,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 234.95 750.57 0)
 			(effects
 				(font
@@ -20207,7 +20207,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 369.57 717.55 0)
 			(effects
 				(font
@@ -20346,7 +20346,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 417.83 95.25 0)
 			(effects
 				(font
@@ -20608,7 +20608,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 651.51 367.03 0)
 			(effects
 				(font
@@ -20800,7 +20800,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 740.41 374.65 0)
 			(effects
 				(font
@@ -21000,7 +21000,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 798.83 519.43 0)
 			(effects
 				(font
@@ -21485,7 +21485,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 910.59 425.45 0)
 			(effects
 				(font
@@ -21685,7 +21685,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 798.83 433.07 0)
 			(effects
 				(font
@@ -22198,7 +22198,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 400.05 173.99 0)
 			(effects
 				(font
@@ -22336,7 +22336,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 737.87 433.07 0)
 			(effects
 				(font
@@ -22537,7 +22537,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 791.21 608.33 0)
 			(effects
 				(font
@@ -22675,7 +22675,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 842.01 422.91 0)
 			(effects
 				(font
@@ -23000,7 +23000,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 158.75 389.89 0)
 			(effects
 				(font
@@ -23200,7 +23200,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
 			(at 433.07 715.01 0)
 			(effects
 				(font
@@ -23400,7 +23400,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
 			(at 748.03 405.13 0)
 			(effects
 				(font
@@ -23913,7 +23913,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 740.41 692.15 0)
 			(effects
 				(font
@@ -24052,7 +24052,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 191.77 392.43 0)
 			(effects
 				(font
@@ -24378,7 +24378,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 651.51 425.45 0)
 			(effects
 				(font
@@ -24822,7 +24822,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 872.49 255.27 0)
 			(effects
 				(font
@@ -25147,7 +25147,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 623.57 461.01 0)
 			(effects
 				(font
@@ -25285,7 +25285,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 463.55 720.09 0)
 			(effects
 				(font
@@ -25734,7 +25734,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 703.58 747.776 0)
 			(effects
 				(font
@@ -25873,7 +25873,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 201.93 392.43 0)
 			(effects
 				(font
@@ -26073,7 +26073,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 651.51 316.23 0)
 			(effects
 				(font
@@ -26452,7 +26452,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 181.61 392.43 0)
 			(effects
 				(font
@@ -26590,7 +26590,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 234.95 593.09 0)
 			(effects
 				(font
@@ -26969,7 +26969,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 875.03 283.21 0)
 			(effects
 				(font
@@ -27169,7 +27169,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 770.89 252.73 0)
 			(effects
 				(font
@@ -27307,7 +27307,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 671.83 427.99 0)
 			(effects
 				(font
@@ -27499,7 +27499,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 824.23 666.75 0)
 			(effects
 				(font
@@ -27638,7 +27638,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 290.83 722.63 0)
 			(effects
 				(font
@@ -27838,7 +27838,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 303.53 146.05 0)
 			(effects
 				(font
@@ -27977,7 +27977,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 212.09 392.43 0)
 			(effects
 				(font
@@ -28177,7 +28177,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 768.35 316.23 0)
 			(effects
 				(font
@@ -28493,7 +28493,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 537.21 260.35 0)
 			(effects
 				(font
@@ -28724,7 +28724,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 234.95 740.41 0)
 			(effects
 				(font
@@ -28924,7 +28924,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 791.21 726.186 0)
 			(effects
 				(font
@@ -29559,7 +29559,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 666.75 318.77 0)
 			(effects
 				(font
@@ -29751,7 +29751,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 908.05 349.25 0)
 			(effects
 				(font
@@ -30013,7 +30013,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 836.93 506.73 0)
 			(effects
 				(font
@@ -30152,7 +30152,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 171.45 392.43 0)
 			(effects
 				(font
@@ -30353,7 +30353,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 877.57 638.81 0)
 			(effects
 				(font
@@ -30616,7 +30616,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 234.95 603.25 0)
 			(effects
 				(font
@@ -31015,7 +31015,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 588.01 265.43 0)
 			(effects
 				(font
@@ -31428,7 +31428,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 765.81 732.536 0)
 			(effects
 				(font
@@ -31566,7 +31566,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Connector_Card:microSIM_JAE_SF53S006VCBR2000"
+		(property "Footprint" "custom_footprints:microSIM_JAE_SF53S006_8pin"
 			(at 433.07 179.07 0)
 			(effects
 				(font
@@ -31654,7 +31654,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 394.97 379.73 0)
 			(effects
 				(font
@@ -31792,7 +31792,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 580.39 267.97 0)
 			(effects
 				(font
@@ -31931,7 +31931,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 792.48 684.276 0)
 			(effects
 				(font
@@ -32268,7 +32268,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 415.29 750.57 0)
 			(effects
 				(font
@@ -32406,7 +32406,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 410.21 379.73 0)
 			(effects
 				(font
@@ -32668,7 +32668,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 397.51 158.75 0)
 			(effects
 				(font
@@ -32935,7 +32935,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 816.61 610.87 0)
 			(effects
 				(font
@@ -33197,7 +33197,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
+		(property "Footprint" "Package_QFP:TQFP-44_10x10mm_P0.8mm"
 			(at 326.39 397.51 0)
 			(effects
 				(font
@@ -33602,7 +33602,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 179.07 577.85 0)
 			(effects
 				(font
@@ -33802,7 +33802,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 854.71 273.05 0)
 			(effects
 				(font
@@ -33940,7 +33940,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 768.35 367.03 0)
 			(effects
 				(font
@@ -34318,7 +34318,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 847.09 346.71 0)
 			(effects
 				(font
@@ -34708,7 +34708,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 798.83 273.05 0)
 			(effects
 				(font
@@ -34846,7 +34846,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
 			(at 758.19 227.33 0)
 			(effects
 				(font
@@ -35111,7 +35111,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 356.87 173.99 0)
 			(effects
 				(font
@@ -35919,7 +35919,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 819.15 684.276 0)
 			(effects
 				(font
@@ -36243,7 +36243,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 288.29 115.57 0)
 			(effects
 				(font
@@ -36435,7 +36435,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 770.89 265.43 0)
 			(effects
 				(font
@@ -36627,7 +36627,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 902.97 509.27 0)
 			(effects
 				(font
@@ -36827,7 +36827,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_B_Lumberg_2411_02_Horizontal"
+		(property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal"
 			(at 847.09 689.61 0)
 			(effects
 				(font
@@ -36908,7 +36908,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
 			(at 252.73 715.01 0)
 			(effects
 				(font
@@ -37046,7 +37046,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 400.05 171.45 0)
 			(effects
 				(font
@@ -37184,7 +37184,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin6"
 			(at 392.43 712.47 0)
 			(effects
 				(font
@@ -37623,7 +37623,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 885.19 422.91 0)
 			(effects
 				(font
@@ -38271,7 +38271,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 669.29 265.43 0)
 			(effects
 				(font
@@ -38463,7 +38463,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "RF_GSM:SIMCom_SIM800C"
+		(property "Footprint" "RF_GSM:SIMCom_SIM900"
 			(at 356.87 130.81 0)
 			(effects
 				(font
@@ -38793,7 +38793,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 151.13 392.43 0)
 			(effects
 				(font
@@ -38932,7 +38932,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 222.25 392.43 0)
 			(effects
 				(font
@@ -39070,7 +39070,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 768.35 412.75 0)
 			(effects
 				(font
@@ -39332,7 +39332,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 242.57 394.97 0)
 			(effects
 				(font
@@ -39533,7 +39533,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 435.61 407.67 0)
 			(effects
 				(font
@@ -39671,7 +39671,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 425.45 379.73 0)
 			(effects
 				(font
@@ -39809,7 +39809,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 880.11 506.73 0)
 			(effects
 				(font
@@ -40547,7 +40547,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 422.91 120.65 0)
 			(effects
 				(font
@@ -40685,7 +40685,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 882.65 346.71 0)
 			(effects
 				(font
@@ -41072,7 +41072,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
 			(at 755.65 290.83 0)
 			(effects
 				(font
@@ -41274,7 +41274,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 270.51 720.09 0)
 			(effects
 				(font
@@ -41412,7 +41412,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 274.32 115.57 0)
 			(effects
 				(font
@@ -41550,7 +41550,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 400.05 181.61 0)
 			(effects
 				(font
@@ -41688,7 +41688,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 275.59 577.85 0)
 			(effects
 				(font
@@ -41826,7 +41826,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 742.95 273.05 0)
 			(effects
 				(font
@@ -42349,7 +42349,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 768.35 354.33 0)
 			(effects
 				(font
@@ -42488,7 +42488,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 417.83 405.13 0)
 			(effects
 				(font
@@ -42835,7 +42835,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 882.65 532.13 0)
 			(effects
 				(font
@@ -42973,7 +42973,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 651.51 265.43 0)
 			(effects
 				(font
@@ -43550,7 +43550,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 445.77 379.73 0)
 			(effects
 				(font
@@ -43688,7 +43688,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 461.01 379.73 0)
 			(effects
 				(font
@@ -43826,7 +43826,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 902.97 257.81 0)
 			(effects
 				(font
@@ -43964,7 +43964,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 666.75 367.03 0)
 			(effects
 				(font
@@ -44156,7 +44156,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin6"
 			(at 209.55 572.77 0)
 			(effects
 				(font
@@ -44472,7 +44472,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 806.45 610.87 0)
 			(effects
 				(font
@@ -44738,7 +44738,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 415.29 255.27 0)
 			(effects
 				(font
@@ -45093,7 +45093,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
 			(at 189.23 717.55 0)
 			(effects
 				(font
@@ -45293,7 +45293,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 572.77 270.51 0)
 			(effects
 				(font
@@ -45555,7 +45555,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
 			(at 755.65 341.63 0)
 			(effects
 				(font
@@ -45757,7 +45757,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 415.29 740.41 0)
 			(effects
 				(font
@@ -45895,7 +45895,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 740.41 323.85 0)
 			(effects
 				(font
@@ -46034,7 +46034,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
 			(at 252.73 572.77 0)
 			(effects
 				(font
@@ -46234,7 +46234,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 768.35 425.45 0)
 			(effects
 				(font
@@ -46426,7 +46426,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 768.35 303.53 0)
 			(effects
 				(font
@@ -46626,7 +46626,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 887.73 448.31 0)
 			(effects
 				(font

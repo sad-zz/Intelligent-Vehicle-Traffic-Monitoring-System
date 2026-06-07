@@ -47,6 +47,11 @@
     "netclass_assignments": null,
     "netclass_patterns": []
   },
+  "libraries": {
+    "pinned_footprint_libs": [
+      "custom_footprints"
+    ]
+  },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
