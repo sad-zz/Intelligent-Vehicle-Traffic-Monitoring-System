@@ -20207,7 +20207,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 369.57 717.55 0)
 			(effects
 				(font
@@ -22537,7 +22537,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 791.21 608.33 0)
 			(effects
 				(font
@@ -25285,7 +25285,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 463.55 720.09 0)
 			(effects
 				(font
@@ -27638,7 +27638,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 290.83 722.63 0)
 			(effects
 				(font
@@ -33602,7 +33602,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 179.07 577.85 0)
 			(effects
 				(font
@@ -35111,7 +35111,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 356.87 173.99 0)
 			(effects
 				(font
@@ -40547,7 +40547,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 422.91 120.65 0)
 			(effects
 				(font
@@ -41274,7 +41274,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 270.51 720.09 0)
 			(effects
 				(font
@@ -41688,7 +41688,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 275.59 577.85 0)
 			(effects
 				(font
@@ -45093,7 +45093,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_Tantalum_E_7.3x4.3mm_P4.10mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 189.23 717.55 0)
 			(effects
 				(font
