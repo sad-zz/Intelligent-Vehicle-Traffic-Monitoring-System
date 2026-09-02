@@ -4,7 +4,8 @@
 #include "Variables.h"
 #include "DS1305_Lib.h"
 #include "GPRS.h"
-#include "MMC.h"
+#include "W25Q64.h"
+#include "License.h"
 #include "Interval.h"
 #include "Capture_Int_Lib.h"
 #include "UART_Int_Lib.h"
@@ -215,10 +216,10 @@ void main() {
     l1occ=0;
     l2occ=0;
     rtc=0;
-    mmc=1;
+    flash_cs=1;
     current_gap[0]=0;
     current_gap[1]=0;
-    mmc_int_send=0;
+    flash_int_send=0;
     spi_busy=0;
     reset_interval();
     IPC0=0x2000;
@@ -399,6 +400,7 @@ void main() {
      Clrwdt();
      bytetostr(memory_error,debug_txt);
      UART1_Write_Text(debug_txt);
+     license_check();
      err_cnt=0;
      err_cnt2=0;
      delay_ms(10);
@@ -503,9 +505,15 @@ void main() {
                        {
                            UART1_Write(interval_data[cal_interval_cnt]);
                        }
-                    mmc_int_send=1;
-                    connection_state=0;
-                    gprs_state=0;
+                    flash_int_send=1;
+                    /* the record is always stored locally; only the GPRS
+                       upload is held back on a unit that was never
+                       activated (and only when LICENSE_ENFORCE is 1)     */
+                    if(license_granted())
+                    {
+                        connection_state=0;
+                        gprs_state=0;
+                    }
 
                 }
                 if(current_time.minute==0 && current_time.hour==0)
@@ -551,8 +559,8 @@ void main() {
             }
             timer_1_sec=0;
             if(gsm_ready>0) gsm_ready--;
-            if(is_error(MMC_ERR)) mmc_error=status;
-            else mmc_error=0;
+            if(is_error(FLASH_ERR)) memory_led=status;
+            else memory_led=0;
          }
          if(err_cnt>60 || err_cnt2>20)
          {
@@ -560,7 +568,7 @@ void main() {
               err_cnt=0;
               err_cnt2=0;
          }
-         if(mmc_int_send==1)
+         if(flash_int_send==1)
          {
             interval_data[262]=13;
             interval_data[263]=10;
@@ -568,8 +576,8 @@ void main() {
             current_sector+= 24*60*(unsigned long)((interval_data[12]-48)*10+(interval_data[13]-48));
             current_sector+= 60*(unsigned long)((interval_data[14]-48)*10+(interval_data[15]-48));
             current_sector+= (unsigned long)((interval_data[16]-48)*10+(interval_data[17]-48));
-            Mmc_Write_Sector(current_sector, interval_data);
-            mmc_int_send=0;
+            Flash_Write_Sector(current_sector, interval_data);
+            flash_int_send=0;
          }
          if(debug)
          {
@@ -870,7 +878,7 @@ void main() {
                                     current_sector+= 24*60*(unsigned long)((uart2_data[8]-48)*10+(uart2_data[9]-48));
                                     current_sector+= 60*(unsigned long)((uart2_data[10]-48)*10+(uart2_data[11]-48));
                                     current_sector+= (unsigned long)((uart2_data[12]-48)*10+(uart2_data[13]-48));
-                                    Mmc_Read_Sector(current_sector, interval_data);
+                                    Flash_Read_Sector(current_sector, interval_data);
                                      if(interval_data[8]!=uart2_data[4] ||
                                         interval_data[9]!=uart2_data[5] ||
                                         interval_data[10]!=uart2_data[6] ||

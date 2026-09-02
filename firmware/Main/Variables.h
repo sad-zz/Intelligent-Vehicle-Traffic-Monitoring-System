@@ -1,9 +1,10 @@
-#define                 ZTCLITE
+#define                 TNJLITE
 #define                 XMICRO                  4
 #define                 INTERVALPERIOD          5
 #define                 system_model            "RATCX1"
-#define                 version                 "HW:B-06,SW:JA11"
-#define                 MMC_ERR                 0x0001
+#define                 version                 "HW:B-07,SW:JA12"
+#define                 manufacturer            "Tosee Noavaran Jonoub"
+#define                 FLASH_ERR               0x0001
 #define                 LP1_ERR                 0x0002
 #define                 LP2_ERR                 0x0004
 #define                 LP3_ERR                 0x0008
@@ -13,6 +14,7 @@
 #define                 LBT_ERR                 0x0080
 #define                 L1D_ERR                 0x0100
 #define                 L2D_ERR                 0x0200
+#define                 LIC_ERR                 0x0400
 #define                 line1dir                12
 #define                 line2dir                12
 #define                 gap_delay               2000
@@ -35,15 +37,14 @@ sbit onloop1 at LATE1_bit;
 sbit onloop2 at LATE2_bit;
 sbit onloop3 at LATE3_bit;
 sbit rtc     at LATF0_bit;
-sbit mmc     at LATF1_bit;
 sbit modem_pwr     at LATB2_bit;
-sbit mmc_error     at LATB5_bit;
+sbit memory_led    at LATB5_bit;
 sbit charge_control     at LATB8_bit;
 sbit mdmstat     at RB6_bit;
 sbit pwrkey     at LATB7_bit;
 sbit connection_state at LATE5_bit;
-sbit Mmc_Chip_Select           at LATF1_bit;
-sbit Mmc_Chip_Select_Direction at TRISF1_bit;
+sbit flash_cs                  at LATF1_bit;
+sbit flash_cs_direction        at TRISF1_bit;
 
 short
     loop_error_tmp,
@@ -51,8 +52,8 @@ short
     memory_ok_sent         ,
     debug                  ,
     spi_busy               ,
-    mmc_int_send           ,
-    mmc_vbv_send           ,
+    flash_int_send         ,
+    flash_vbv_send         ,
     timer_1_sec            ,
     docal                  ,
     dis_int                ,
@@ -142,7 +143,7 @@ int
     NSPEED2                ,
     HMM                    ,
     AUTCAL                 ,
-    mmc_i                  ,
+    flash_i                ,
     power_type             ,
     LIMITE                 ,
     MARGINTOP              ,

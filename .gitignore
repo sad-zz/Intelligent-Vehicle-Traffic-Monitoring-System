@@ -58,3 +58,6 @@ htmlcov/
 # Temporary files
 *.tmp
 *.bak
+
+# host-side firmware simulator binary
+firmware/tools/sim/sim

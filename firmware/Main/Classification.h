@@ -245,7 +245,7 @@ void cal_class(unsigned short lane)
     }
     tsdata[31]=13;
     tsdata[32]=10;
-    mmc_vbv_send=1;
+    flash_vbv_send=1;
     current_gap[lane]=0;
 
     reset_class(lane);
