@@ -2,7 +2,7 @@ void tris_init()
 {
     TRISB.RB3=0;
     TRISB.RB5=0;
-    mmc_error=0;
+    memory_led=0;
     TRISB.RB6=1;
     TRISB.RB7=0;
     LATB.RB7=0;

@@ -19,10 +19,13 @@ void uart_init()
     U2STAbits.OERR=0;
     u2func=0;
     function_code=0;
+    send_out(manufacturer);
+    UART1_Write(13);
+    UART1_Write(10);
     send_out("Started, Step:");
     wordtostr((RCON-8192),tmp7);
     UART1_Write_Text(tmp7);
-    send_out("  MMC Error:");
+    send_out("  Flash Error:");
     RCON=0x0000;
 }
 void UART1INT() iv IVT_ADDR_U1RXINTERRUPT
@@ -120,7 +123,8 @@ void process_interface()
                  UART1_Write(',');
                  send_out(version);
                  UART1_Write(',');
-                 send_out("READY");
+                 if(license_granted()) send_out("READY");
+                 else                  send_out("NOLIC");
                  break;
          case 2:
                  //if(uart1_data[0]=='0' && uart1_data[1]=='0' && uart1_data[2]=='0' && uart1_data[3]=='2')
@@ -142,13 +146,48 @@ void process_interface()
                      NVMADRU=0x007F;
                  }
                  break;
+         case 198:
+                 /* identity of the memory chip - the installer reads this
+                    and asks the factory for the matching activation code */
+                 send_out("UID: ");
+                 for(clear_uart1_cnt=0;clear_uart1_cnt<8;clear_uart1_cnt++)
+                 {
+                     license_write_hex8(flash_uid[clear_uart1_cnt]);
+                 }
+                 UART1_Write(13);
+                 UART1_Write(10);
+                 send_out("JEDEC: ");
+                 license_write_hex8(flash_jedec[0]);
+                 license_write_hex8(flash_jedec[1]);
+                 license_write_hex8(flash_jedec[2]);
+                 UART1_Write(13);
+                 UART1_Write(10);
+                 send_out("LIC: ");
+                 if(license_state==LIC_STATE_OK)           send_out("ACTIVE");
+                 else if(license_state==LIC_STATE_UNKNOWN) send_out("NOMEM");
+                 else                                      send_out("NOT-ACTIVE");
+                 break;
+         case 199:
+                 /* 0199 + 8 hex characters = store the activation code */
+                 if(license_parse(uart1_data+4,&license_stored))
+                 {
+                     send_out("LIC FORMAT ERROR");
+                 }
+                 else
+                 {
+                     license_store(license_stored);
+                     license_check();
+                     if(license_state==LIC_STATE_OK) send_out("LIC OK");
+                     else                            send_out("LIC REJECTED");
+                 }
+                 break;
          case 197:
                  //mmc_search(uart1_data);
                  current_sector= 31*24*60*(unsigned long)((uart1_data[6]-48)*10+(uart1_data[7]-48));
                  current_sector+= 24*60*(unsigned long)((uart1_data[8]-48)*10+(uart1_data[9]-48));
                  current_sector+= 60*(unsigned long)((uart1_data[10]-48)*10+(uart1_data[11]-48));
                  current_sector+= (unsigned long)((uart1_data[12]-48)*10+(uart1_data[13]-48));
-                Mmc_Read_Sector(current_sector, interval_data);
+                Flash_Read_Sector(current_sector, interval_data);
                  if(interval_data[8]!=uart1_data[4] ||
                     interval_data[9]!=uart1_data[5] ||
                     interval_data[10]!=uart1_data[6] ||
@@ -726,8 +765,26 @@ void process_interface()
                  send_out(version);
                  UART1_Write(13);
                  UART1_Write(10);
-                 //send_out("By Ali Jalilvand");
-                 send_out("By Ali Jalilvand");
+                 send_out("Memory: W25Q64JVS ");
+                 license_write_hex8(flash_jedec[0]);
+                 license_write_hex8(flash_jedec[1]);
+                 license_write_hex8(flash_jedec[2]);
+                 UART1_Write(13);
+                 UART1_Write(10);
+                 send_out("UID: ");
+                 for(clear_uart1_cnt=0;clear_uart1_cnt<8;clear_uart1_cnt++)
+                 {
+                     license_write_hex8(flash_uid[clear_uart1_cnt]);
+                 }
+                 UART1_Write(13);
+                 UART1_Write(10);
+                 send_out("LIC: ");
+                 if(license_state==LIC_STATE_OK)           send_out("ACTIVE");
+                 else if(license_state==LIC_STATE_UNKNOWN) send_out("NOMEM");
+                 else                                      send_out("NOT-ACTIVE");
+                 UART1_Write(13);
+                 UART1_Write(10);
+                 send_out(manufacturer);
 
                  break;
 
